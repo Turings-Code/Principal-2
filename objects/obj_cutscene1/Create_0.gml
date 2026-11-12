@@ -68,7 +68,7 @@ fase_antes = 0;
 
 dialogos4 = [
     { nome: "Alan", frase: "Meu computador não está funcionando!" },
-    { nome: "Turing", frase: "Que máquina interessante! Isso são os computadores modernos?" },
+    /*{ nome: "Turing", frase: "Que máquina interessante! Isso são os computadores modernos?" },
 	{ nome: "Alan", frase: "Sim! Porém parece que ele não quer pegar agora." },
 	{ nome: "Alan", frase: "Espera! Oque aconteceu com meu computador? Parece está faltando peças!" },
 	{ nome: "Theo", frase: "O que aconteceu? Você ligou na tomada?" },
@@ -85,7 +85,7 @@ dialogos4 = [
 	{ nome: "Theo", frase: "Se não fizermos isso, nossa tecnologia se perderá!" },
 	{ nome: "Alan", frase: "Vamos pegar um ônibus até Bletchley Park e encontrar um Enigma!" },
 	{ nome: "Theo", frase: "É isso! Vamos te levar de volta ainda hoje, senhor Turing!" },
-	{ nome: "Turing", frase: "Ok então..." },
+	{ nome: "Turing", frase: "Ok então..." },*/
 ];
 
 pontos2_x = [2809, 2797, 1850, 1683, 670];

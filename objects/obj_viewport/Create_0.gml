@@ -1,4 +1,4 @@
-var escala = 1.2;
+var escala = 1;
 
 cam = view_camera[0];
 cam_width = 1365 * escala;   // 2047.5

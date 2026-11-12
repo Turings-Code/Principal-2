@@ -1,5 +1,6 @@
 fase = 3;
 dialogos = dialogos2;
+audio_play_sound(snd_impacto, 1, false);
 dialogo_index = 0;
 nome = dialogos[0].nome;
 frase = dialogos[0].frase;

@@ -31,6 +31,11 @@ if (estado == "nenhum" && instance_exists(obj_turing)) {
         usar_spawn = false;
         estado = "entrando";
     }
+	    else if (room == rm_rua && _t1) {
+        dest_room = rm_onibus;
+        usar_spawn = false;
+        estado = "entrando";
+    }
 }
 
 if (estado == "entrando") {

@@ -11,6 +11,12 @@ if(room==rm_quarto){
 	alarm[0] = 100;
 	obj_turing.travado=true;
 }
+if(room==rm_rua){
+	window_set_cursor(cr_default);
+}
 if(room==rm_introducao){
 	window_set_cursor(cr_default);
 }
+if(room!=rm_menu&&room!=rm_inicio&&room!=rm_introducao){
+	if(!instance_exists(obj_turing)){
+		instance_create_layer(0, 0, "Instances", obj_turing);}}
