@@ -20,7 +20,7 @@ if (_nome == "Turing") {
 } else if (_nome == "Mãe") {
     _spr_caixa = spr_caixadefalamae;
 } else if (_nome == "???") {
-    _spr_caixa = spr_caixadefalainterrogacao;
+    _spr_caixa = spr_caixadefalamae;
 }
 if (caixadetexto) {
     if (fade_caixa < 1) {

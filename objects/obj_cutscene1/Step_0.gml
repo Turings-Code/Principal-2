@@ -1,3 +1,23 @@
+if (dialogoalan) {
+    dialogoalan = false;
+    if (!caixadetexto) {
+        fase_antes = fase;
+        fase = 8;
+        dialogos = dialogos4;
+        dialogo_index = 0;
+        nome = dialogos[0].nome;
+        frase = dialogos[0].frase;
+        contador_texto = 0;
+        mostrar_texto = true;
+        texto_acelerado = false;
+        caixadetexto = true;
+    }
+}
+
+if (caixadetexto) {
+    obj_turing.travado = true;
+}
+
 if (fase == 6) {
     if (!instance_exists(obj_alan)) {
         fase = 7;

@@ -11,3 +11,4 @@ vel = 10;
 travado = false;
 som_passos_id = -1;
 som_pedra_id = -1;
+theosegue=false;

@@ -20,7 +20,7 @@ dialogos = [
 ];
 
 dialogos2 = [
-    { nome: "???", frase: "Aaaaaahh!" },
+    { nome: "Mãe", frase: "Aaaaaahh!" },
     { nome: "Alan", frase: "O que aconteceu?" },
     { nome: "Alan", frase: "Preciso dar uma olhada." }
 ];
@@ -62,3 +62,11 @@ ponto_atual = 0;
 andando_alan = false;
 vel_alan = 8;
 distancia_alan = 300;
+
+dialogoalan = false;
+fase_antes = 0;
+
+dialogos4 = [
+    { nome: "Alan", frase: "Fala de exemplo do Alan." },
+    { nome: "Turing", frase: "Fala de exemplo do Turing." }
+];

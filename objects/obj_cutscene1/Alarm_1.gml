@@ -7,6 +7,8 @@ if (dialogo_index < array_length(dialogos)) {
     mostrar_texto = true;
     texto_acelerado = false;
 } else {
+	if(fase!=0){
+	obj_turing.travado=false;}
     caixadetexto = false;
     mostrar_texto = false;
 
@@ -18,7 +20,8 @@ if (dialogo_index < array_length(dialogos)) {
         if (instance_exists(obj_turing)) {
             obj_turing.travado = false;
         }
-
+		if(!instance_exists(obj_theo)){
+			instance_create_layer(1017, 1362, "Instances", obj_theo);}
         if (instance_exists(obj_objetivos)) {
             audio_play_sound(snd_objetivo, 1, false);
             obj_objetivos.define_objetivo("OBJETIVO - Descubra oque aconteceu");
@@ -30,20 +33,30 @@ if (dialogo_index < array_length(dialogos)) {
 	    else if (fase == 5) {
     fase = 6;
     andando_alan = true;
+	
     obj_objetivos.define_objetivo("OBJETIVO - Siga o Alan");
     if (instance_exists(obj_turing) && instance_exists(obj_turingcutscene)) {
         var _tx = obj_turing.x;
         var _ty = obj_turing.y;
         obj_turing.x = obj_turingcutscene.x;
         obj_turing.y = obj_turingcutscene.y;
+		obj_turing.theosegue=true;
         if (instance_exists(obj_turingcutscene)) {
             with (obj_turingcutscene) { instance_destroy(); }
         }
         if (!instance_exists(obj_alan)) {
             instance_create_layer(_tx, _ty, "Instances", obj_alan);
         }
+		if (!instance_exists(obj_falaalan1)) {
+            instance_create_layer(3077, 907, "Instances", obj_falaalan1);
+        }
     }
 
     global.alanjoga = false;
 }
+    else if (fase == 8) {
+		if(instance_exists(obj_falaalan1)){
+			with(obj_falaalan1){instance_destroy();}}
+        fase = fase_antes;
+    }
 }
