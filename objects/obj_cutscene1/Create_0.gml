@@ -68,5 +68,13 @@ fase_antes = 0;
 
 dialogos4 = [
     { nome: "Alan", frase: "Meu computador não está funcionando!" },
-    { nome: "Turing", frase: "Fala de exemplo do Turing." }
+    { nome: "Turing", frase: "Que máquina interessante! Isso são os computadores modernos?!" },
+	{ nome: "Alan", frase: "Sim! Porém parece que ele não quer pegar agora." },
+	{ nome: "Theo", frase: "O que deve ter acontecido? Será porque o Turing veio ao nosso presente?" },
+	{ nome: "Theo", frase: "Quando eu pesquisei antes sobre o Turing o que mostrava mesmo?" },
+	{ nome: "Alan", frase: "'Pai da computa...'" },
+	{ nome: "Theo", frase: "Isso! Turing é pai da computação moderna!" },
+	{ nome: "Turing", frase: "Que?! Pesquisar? Pai da computação?..." },
+	{ nome: "Alan", frase: "Isso Theo, como Turing veio para o presente ele não pôde utilizar a Bombe." },
+	{ nome: "Alan", frase: "Talvez as máquinas estejão desaparecendo, precisamos ajustar isso o quanto antes" },
 ];
