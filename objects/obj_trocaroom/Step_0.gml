@@ -27,10 +27,9 @@ if (estado == "escurecendo") {
 
 if (estado == "nenhum" && instance_exists(obj_turing)) {
     if (room == rm_quarto && _t1) {
-        dest_room = room_next(room);
+        dest_room = rm_rua;
         usar_spawn = false;
         estado = "entrando";
-        audio_play_sound(snd_futuro, 0.5, false);
     }
 }
 

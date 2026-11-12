@@ -62,6 +62,9 @@ if (dialogo_index < array_length(dialogos)) {
 		instance_create_layer(3035, 857, "Instances", obj_alan);}
 		audio_play_sound(snd_objetivo, 1, false);
 		obj_objetivos.define_objetivo("OBJETIVO - Siga o Alan");
+		var _troca = instance_create_layer(656, 1468, "Instances", obj_troca);
+_troca.image_xscale = 5;
+_troca.image_yscale = 14;
                 fase = 9;
         andando_alan2 = true;
     }
