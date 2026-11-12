@@ -27,6 +27,7 @@ if (dialogo_index < array_length(dialogos)) {
             obj_objetivos.define_objetivo("OBJETIVO - Descubra oque aconteceu");
 			obj_turing.direcao="cima";
 			obj_turing.sprite_index=spr_turingparado;
+			obj_mae.x=1213; obj_mae.y=997;
         }
     }
 	
@@ -55,8 +56,7 @@ if (dialogo_index < array_length(dialogos)) {
     global.alanjoga = false;
 }
     else if (fase == 8) {
-		if(instance_exists(obj_falaalan1)){
-			with(obj_falaalan1){instance_destroy();}}
+		
         fase = fase_antes;
     }
 }

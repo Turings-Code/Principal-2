@@ -119,9 +119,18 @@ if (_falando) {
 
 if (caixadetexto) {
     var _cam = view_camera[0];
-        var _alvo = noone;
+    var _alvo = noone;
+    var _fixo = false;
 
-    if (fase == 5) {
+    if (fase == 8) {
+        if (nome == "Alan") {
+            _fixo = true;
+        } else if (nome == "Turing" && instance_exists(obj_turing)) {
+            _alvo = obj_turing;
+        } else if (nome == "Theo" && instance_exists(obj_theo)) {
+            _alvo = obj_theo;
+        }
+    } else if (fase == 5) {
         if (nome == "Turing" && instance_exists(obj_turingcutscene)) {
             _alvo = obj_turingcutscene;
         } else if (nome == "Theo" && instance_exists(obj_theocutscene)) {
@@ -133,6 +142,8 @@ if (caixadetexto) {
         }
     } else if (nome == "Alan" && instance_exists(obj_turing)) {
         _alvo = obj_turing;
+    } else if (nome == "Mãe" && instance_exists(obj_mae)) {
+        _alvo = obj_mae;
     }
 
     var _w = camera_get_view_width(_cam);
@@ -141,8 +152,8 @@ if (caixadetexto) {
     var _centro_x = camera_get_view_x(_cam) + _w / 2;
     var _centro_y = camera_get_view_y(_cam) + _h / 2;
 
-    var _w_alvo = (_alvo != noone) ? 1170 : 1365;
-    var _h_alvo = (_alvo != noone) ? 660 : 770;
+    var _w_alvo = (_alvo != noone || _fixo) ? 1170 : 1365;
+    var _h_alvo = (_alvo != noone || _fixo) ? 660 : 770;
 
     _w = lerp(_w, _w_alvo, cam_zoom_vel);
     _h = lerp(_h, _h_alvo, cam_zoom_vel);
@@ -150,7 +161,10 @@ if (caixadetexto) {
     if (abs(_w - _w_alvo) < 0.5) _w = _w_alvo;
     if (abs(_h - _h_alvo) < 0.5) _h = _h_alvo;
 
-    if (_alvo != noone) {
+    if (_fixo) {
+        _centro_x = lerp(_centro_x, 3163, cam_vel);
+        _centro_y = lerp(_centro_y, 858, cam_vel);
+    } else if (_alvo != noone) {
         _centro_x = lerp(_centro_x, (_alvo.bbox_left + _alvo.bbox_right) / 2, cam_vel);
         _centro_y = lerp(_centro_y, (_alvo.bbox_top + _alvo.bbox_bottom) / 2, cam_vel);
     }

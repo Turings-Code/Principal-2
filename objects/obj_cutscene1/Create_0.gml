@@ -67,6 +67,6 @@ dialogoalan = false;
 fase_antes = 0;
 
 dialogos4 = [
-    { nome: "Alan", frase: "Fala de exemplo do Alan." },
+    { nome: "Alan", frase: "Meu computador não está funcionando!" },
     { nome: "Turing", frase: "Fala de exemplo do Turing." }
 ];
