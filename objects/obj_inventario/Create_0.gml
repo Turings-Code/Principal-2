@@ -1,0 +1,17 @@
+margem_x = 40;
+margem_y = 220;
+image_alpha = 0.9;
+aberto = false;
+itens = [];
+max_slots = 9;
+cell_w = sprite_get_width(spr_iconemochila) * image_xscale;
+cell_h = sprite_get_height(spr_iconemochila) * image_yscale;
+abriu_agora = false;
+nome_item = "";
+aviso_ativo = false;
+aviso_y = 0;
+aviso_alpha = 0;
+aviso_vel = 0.4;
+aviso_fade = 0.005;
+aviso_escala = 0.7;
+ganhouitem = false;

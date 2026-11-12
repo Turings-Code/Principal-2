@@ -14,8 +14,10 @@ dialogo1 = false;
 obj_objetivos.define_objetivo("OBJETIVO - Fale com Alan");
 audio_play_sound(snd_objetivoconcluido, 1, false);
 dialogos = [
-    { nome: "Alan", frase: "Fala de exemplo do Alan." },
-    { nome: "Turing", frase: "Fala de exemplo do Turing." }
+    { nome: "Alan", frase: "Droga! O meu bilhete não está funcionando!" },
+    { nome: "Theo", frase: "Você está com saldo?" },
+	{ nome: "Alan", frase: "Não é isso, o leitor não parece estar funcionado! " },
+	{ nome: "Turing", frase: "Deixa eu dar uma olhada nisso." },
 ];
 
 dialogo_index = 0;

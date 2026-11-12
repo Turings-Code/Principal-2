@@ -10,7 +10,19 @@ if (dialogo_index < array_length(dialogos)) {
     caixadetexto = false;
     mostrar_texto = false;
     dialogo1 = false;
+	if(fase==1){
+		if(!instance_exists(obj_leitoraparece)){
+			instance_create_layer(682, 441, "Instances", obj_leitoraparece);}
+		audio_play_sound(snd_objetivo, 1, false);
+		obj_objetivos.define_objetivo("OBJETIVO - Concerte o Leitor");
+		obj_objetivos.define_etapas([
+    "- Identifique a função de cada componente do hardware",
+    "e concerte o encaixe corretamente",
+    "- Passe pela catraca"
+]);
+	}
     fase = 2;
+	
     if (instance_exists(obj_turing)) {
         obj_turing.travado = false;
     }

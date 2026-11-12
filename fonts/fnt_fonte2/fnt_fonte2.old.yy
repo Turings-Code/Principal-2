@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fnt_fonte_1",
+  "%Name":"fnt_fonte2",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":40,
@@ -213,7 +213,7 @@
   "last":0,
   "lineHeight":50,
   "maintainGms1Font":false,
-  "name":"fnt_fonte_1",
+  "name":"fnt_fonte2",
   "parent":{
     "name":"Turing's Code 2",
     "path":"Turing's Code 2.yyp",

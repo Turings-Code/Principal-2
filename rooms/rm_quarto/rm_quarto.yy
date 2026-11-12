@@ -49,6 +49,7 @@
     {"name":"inst_65C6D152","path":"rooms/rm_quarto/rm_quarto.yy",},
     {"name":"inst_1FCCA8FF","path":"rooms/rm_quarto/rm_quarto.yy",},
     {"name":"inst_47D85523","path":"rooms/rm_quarto/rm_quarto.yy",},
+    {"name":"inst_710556E2","path":"rooms/rm_quarto/rm_quarto.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -96,6 +97,7 @@
         {"$GMRInstance":"v4","%Name":"inst_65C6D152","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_65C6D152","objectId":{"name":"obj_mesa","path":"objects/obj_mesa/obj_mesa.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":7.0,"scaleY":7.0,"x":1715.0,"y":1127.1615,},
         {"$GMRInstance":"v4","%Name":"inst_1FCCA8FF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1FCCA8FF","objectId":{"name":"obj_paredescasa","path":"objects/obj_paredescasa/obj_paredescasa.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":7.0,"scaleY":7.0,"x":0.0,"y":0.0,},
         {"$GMRInstance":"v4","%Name":"inst_47D85523","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_47D85523","objectId":{"name":"obj_collisionblocktemp","path":"objects/obj_collisionblocktemp/obj_collisionblocktemp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":11.53447,"scaleY":26.8125,"x":3520.435,"y":1376.5,},
+        {"$GMRInstance":"v4","%Name":"inst_710556E2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_710556E2","objectId":{"name":"obj_inventario","path":"objects/obj_inventario/obj_inventario.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":6.5,"scaleY":6.5,"x":2127.1594,"y":393.15344,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_cenarioquarto2","path":"sprites/spr_cenarioquarto2/spr_cenarioquarto2.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
