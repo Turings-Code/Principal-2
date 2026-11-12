@@ -17,6 +17,14 @@ if (room != room_anterior) {
     room_anterior = room;
 }
 
+if (estado == "nenhum" && instance_exists(obj_cursor) && (obj_cursor.clicou || obj_cursor.clicou2)) {
+    estado = "escurecendo";
+}
+
+if (estado == "escurecendo") {
+    alpha = min(alpha + 0.02, 1);
+}
+
 if (estado == "nenhum" && instance_exists(obj_turing)) {
     if (room == rm_quarto && _t1) {
         dest_room = room_next(room);

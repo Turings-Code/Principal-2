@@ -1,15 +1,18 @@
 depth = -y;
 
-var _baixo = spr_turingbaixo;
-var _cima = spr_turingcima;
-var _esquerda = spr_turingesquerda;
-var _direita = spr_turingdireita;
-var _parado = spr_turingparado;
-var _parado_cima = spr_turingparadocima;
-var _parado_esquerda = spr_turingparadoesquerda;
-var _parado_direita = spr_turingparadodireita;
+var _baixo = global.alanjoga ? spr_alanbaixo : spr_turingbaixo;
+var _cima = global.alanjoga ? spr_alancima : spr_turingcima;
+var _esquerda = global.alanjoga ? spr_alanesquerda : spr_turingesquerda;
+var _direita = global.alanjoga ? spr_alandireita : spr_turingdireita;
+var _parado = global.alanjoga ? spr_alanparado : spr_turingparado;
+var _parado_cima = global.alanjoga ? spr_alanparadocima : spr_turingparadocima;
+var _parado_esquerda = global.alanjoga ? spr_alanparadoesquerda : spr_turingparadoesquerda;
+var _parado_direita = global.alanjoga ? spr_alanparadodireita : spr_turingparadodireita;
 
 if (travado) {
+	if(!global.alanjoga){
+	sprite_index=spr_turingparado;}
+	else{ sprite_index=spr_alanparado;}
     scr_collision_move(0, 0);
     if (audio_is_playing(snd_passosgrama)) audio_stop_sound(snd_passosgrama);
     if (audio_is_playing(snd_passospedra)) audio_stop_sound(snd_passospedra);
