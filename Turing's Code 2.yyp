@@ -163,6 +163,7 @@
     {"id":{"name":"spr_turingparadocima","path":"sprites/spr_turingparadocima/spr_turingparadocima.yy",},},
     {"id":{"name":"spr_turingparadodireita","path":"sprites/spr_turingparadodireita/spr_turingparadodireita.yy",},},
     {"id":{"name":"spr_turingparadoesquerda","path":"sprites/spr_turingparadoesquerda/spr_turingparadoesquerda.yy",},},
+    {"id":{"name":"Sprite64","path":"sprites/Sprite64/Sprite64.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
