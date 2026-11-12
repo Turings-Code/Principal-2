@@ -1,4 +1,7 @@
-
+if(room==rm_quarto){
+	if(audio_is_playing(snd_backgroundfinal)){
+	if (audio_sound_get_gain(snd_backgroundfinal) <= 0) {
+    audio_stop_sound(snd_backgroundfinal);}}}
 
 if (instance_exists(obj_cursor) && (obj_cursor.clicou || obj_cursor.clicou2)) {
     escurecendo = true;

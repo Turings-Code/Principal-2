@@ -11,3 +11,6 @@ if(room==rm_quarto){
 	alarm[0] = 100;
 	obj_turing.travado=true;
 }
+if(room==rm_introducao){
+	window_set_cursor(cr_default);
+}

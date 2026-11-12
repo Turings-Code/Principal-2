@@ -34,7 +34,7 @@ if (dialogo_index < array_length(dialogos)) {
 	    else if (fase == 5) {
     fase = 6;
     andando_alan = true;
-	
+	audio_play_sound(snd_objetivo, 1, false);
     obj_objetivos.define_objetivo("OBJETIVO - Siga o Alan");
     if (instance_exists(obj_turing) && instance_exists(obj_turingcutscene)) {
         var _tx = obj_turing.x;
@@ -56,7 +56,13 @@ if (dialogo_index < array_length(dialogos)) {
     global.alanjoga = false;
 }
     else if (fase == 8) {
-		
-        fase = fase_antes;
+		var _fundo = layer_background_get_id(layer_get_id("Background"));
+                layer_background_sprite(_fundo, spr_cenarioquarto2);
+				if(!instance_exists(obj_alan)){
+		instance_create_layer(3035, 857, "Instances", obj_alan);}
+		audio_play_sound(snd_objetivo, 1, false);
+		obj_objetivos.define_objetivo("OBJETIVO - Siga o Alan");
+                fase = 9;
+        andando_alan2 = true;
     }
 }
