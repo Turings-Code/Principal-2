@@ -19,6 +19,7 @@
   "height":80,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"f29c34cb-3ee4-43bf-9696-315076d0d124","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"f29c34cb-3ee4-43bf-9696-315076d0d124","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"1359c2fa-068a-46c5-bfe1-cbfa035a6c1f","blendMode":0,"displayName":"default","isLocked":false,"name":"1359c2fa-068a-46c5-bfe1-cbfa035a6c1f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_logofundo",
