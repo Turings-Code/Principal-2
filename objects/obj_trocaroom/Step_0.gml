@@ -40,4 +40,4 @@ if (estado == "saindo") {
         alpha = 0;
         estado = "nenhum";
     }
-}
+} 
