@@ -1,7 +1,8 @@
 if (estado == 0) {
     image_alpha = min(image_alpha + fade_vel, 1);
     if (image_alpha >= 1) {
-        estado = 1;
+		if(obj_logofundo.image_alpha>=1){
+        estado = 1;}
         timer = 2 * game_get_speed(gamespeed_fps);
     }
 }
