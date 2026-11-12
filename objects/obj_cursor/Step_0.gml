@@ -27,12 +27,12 @@ if(clicou && !audio_is_playing(snd_PCfinal)){
 	if (file_exists("save.json")) {
 	scr_carregar();
 	} else{
-		room_goto(rm_quarto);}
+		room_goto(rm_introducao);}
 	}
 
 if(clicou2 && !audio_is_playing(snd_PCfinal)){
 	if (file_exists("save.json")) file_delete("save.json");
-		room_goto(rm_quarto);
+		room_goto(rm_introducao);
 	}
 
 

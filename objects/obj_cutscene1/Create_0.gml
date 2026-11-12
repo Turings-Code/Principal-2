@@ -68,13 +68,27 @@ fase_antes = 0;
 
 dialogos4 = [
     { nome: "Alan", frase: "Meu computador não está funcionando!" },
-    { nome: "Turing", frase: "Que máquina interessante! Isso são os computadores modernos?!" },
+    { nome: "Turing", frase: "Que máquina interessante! Isso são os computadores modernos?" },
 	{ nome: "Alan", frase: "Sim! Porém parece que ele não quer pegar agora." },
-	{ nome: "Theo", frase: "O que deve ter acontecido? Será porque o Turing veio ao nosso presente?" },
-	{ nome: "Theo", frase: "Quando eu pesquisei antes sobre o Turing o que mostrava mesmo?" },
+	{ nome: "Alan", frase: "Espera! Oque aconteceu com meu computador? Parece está faltando peças!" },
+	{ nome: "Theo", frase: "O que aconteceu? Você ligou na tomada?" },
+	{ nome: "Alan", frase: "Não é isso, Theo! Parece que algumas peças do meu computador estão falhando!" },
+	{ nome: "Theo", frase: "Espera! Quando eu pesquisei antes sobre o Turing o que mostrava mesmo?" },
 	{ nome: "Alan", frase: "'Pai da computa...'" },
 	{ nome: "Theo", frase: "Isso! Turing é pai da computação moderna!" },
-	{ nome: "Turing", frase: "Que?! Pesquisar? Pai da computação?..." },
-	{ nome: "Alan", frase: "Isso Theo, como Turing veio para o presente ele não pôde utilizar a Bombe." },
-	{ nome: "Alan", frase: "Talvez as máquinas estejão desaparecendo, precisamos ajustar isso o quanto antes" },
+	{ nome: "Turing", frase: "Que? Pesquisar? Pai da computação?..." },
+	{ nome: "Alan", frase: "Isso Theo! Como Turing veio para o presente," },
+	{ nome: "Alan", frase: "o que ele fez no passado pode estar se perdendo!" },
+	{ nome: "Alan", frase: "Talvez as máquinas estejam desaparecendo," },
+	{ nome: "Alan", frase: "precisamos resolver isso o quanto antes!" },
+	{ nome: "Theo", frase: "Nós recisamos levar o senhor Turing de volta para o passado." },
+	{ nome: "Theo", frase: "Se não fizermos isso, nossa tecnologia se perderá!" },
+	{ nome: "Alan", frase: "Vamos pegar um ônibus até Bletchley Park e encontrar um Enigma!" },
+	{ nome: "Theo", frase: "É isso! Vamos te levar de volta ainda hoje, senhor Turing!" },
+	{ nome: "Turing", frase: "Ok então..." },
 ];
+
+pontos2_x = [2809, 2797, 1850, 1683, 670];
+pontos2_y = [1173, 1450, 1431, 1409, 1413];
+ponto_atual2 = 0;
+andando_alan2 = false;

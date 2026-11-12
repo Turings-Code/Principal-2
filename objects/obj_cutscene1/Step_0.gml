@@ -18,6 +18,51 @@ if (caixadetexto) {
     obj_turing.travado = true;
 }
 
+if (fase == 9) {
+    if (!instance_exists(obj_alan)) {
+        fase = 10;
+    } else if (andando_alan2) {
+        var _px2 = pontos2_x[ponto_atual2];
+        var _py2 = pontos2_y[ponto_atual2];
+        var _dx2 = _px2 - obj_alan.x;
+        var _dy2 = _py2 - obj_alan.y;
+        var _dist2 = point_distance(obj_alan.x, obj_alan.y, _px2, _py2);
+
+        if (abs(_dx2) > abs(_dy2)) {
+            obj_alan.sprite_index = (_dx2 > 0) ? spr_alandireita : spr_alanesquerda;
+        } else {
+            obj_alan.sprite_index = (_dy2 > 0) ? spr_alanbaixo : spr_alancima;
+        }
+
+        if (_dist2 <= vel_alan) {
+            obj_alan.x = _px2;
+            obj_alan.y = _py2;
+            andando_alan2 = false;
+            obj_alan.sprite_index = spr_alanparado;
+
+            if (ponto_atual2 == array_length(pontos2_x) - 1) {
+                with (obj_alan) {
+                    instance_destroy();
+                }
+                fase = 10;
+            }
+        } else {
+            var _dir2 = point_direction(obj_alan.x, obj_alan.y, _px2, _py2);
+            obj_alan.x += lengthdir_x(vel_alan, _dir2);
+            obj_alan.y += lengthdir_y(vel_alan, _dir2);
+        }
+
+        if (instance_exists(obj_alan)) {
+            obj_alan.depth = -obj_alan.y;
+        }
+    } else if (instance_exists(obj_turing)) {
+        if (point_distance(obj_alan.x, obj_alan.y, obj_turing.x, obj_turing.y) <= distancia_alan) {
+            ponto_atual2 += 1;
+            andando_alan2 = true;
+        }
+    }
+}
+
 if (fase == 6) {
     if (!instance_exists(obj_alan)) {
         fase = 7;

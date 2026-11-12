@@ -4,6 +4,7 @@ function scr_collision_move(move_x, move_y)
     {
         return place_meeting(_x, _y, obj_collisionblock)
         || place_meeting(_x, _y, obj_collisionblocktemp)
+		|| place_meeting(_x, _y, obj_collisionblockturing)
 		|| place_meeting(_x, _y, obj_alan)
 		|| place_meeting(_x, _y, obj_theo)
 		|| place_meeting(_x, _y, obj_turing);
