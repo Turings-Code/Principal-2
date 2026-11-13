@@ -1,3 +1,88 @@
+if (transicao > 0) {
+    if (instance_exists(obj_turing)) {
+        obj_turing.travado = true;
+    }
+
+    if (transicao == 1) {
+        alpha_preto = min(alpha_preto + 0.008, 1);
+        if (alpha_preto >= 1) {
+            transicao = 2;
+        }
+    } else if (transicao == 2) {
+        alpha_msg = min(alpha_msg + 0.008, 1);
+        if (alpha_msg >= 1) {
+            transicao = 3;
+            timer_trans = game_get_speed(gamespeed_fps) * 2;
+        }
+    } else if (transicao == 3) {
+        timer_trans--;
+        if (timer_trans <= 0) {
+            transicao = 4;
+			obj_fundoonibus.image_speed=0;
+			obj_fundoonibus.image_index=0;
+			obj_postesonibus.image_speed=0;
+			obj_poste.image_index=0;
+        }
+    } else if (transicao == 4) {
+        alpha_msg = max(alpha_msg - 0.008, 0);
+        if (alpha_msg <= 0) {
+            transicao = 5;
+        }
+    } else if (transicao == 5) {
+        alpha_preto = max(alpha_preto - 0.008, 0);
+        if (alpha_preto <= 0) {
+                        transicao = 0;
+            em_dialogos5 = true;
+            dialogos = dialogos5;
+            dialogo_index = 0;
+            nome = dialogos[0].nome;
+            frase = dialogos[0].frase;
+            contador_texto = 0;
+            mostrar_texto = true;
+            texto_acelerado = false;
+            caixadetexto = true;
+        }
+    }
+}
+
+if (dialogo3 && fase3 == 0) {
+    fase3 = 1;
+}
+
+if (fase3 == 1 && instance_exists(obj_turing)) {
+        obj_turing.travado = true;
+    obj_turing.sprite_cutscene = true;
+    obj_turing.sprite_index = spr_turingesquerda;
+    obj_turing.direcao = "esquerda";
+
+    var _dx3 = turing_dest_x - obj_turing.x;
+    var _dy3 = turing_dest_y - obj_turing.y;
+    var _dist3 = point_distance(0, 0, _dx3, _dy3);
+
+    if (_dist3 <= turing_vel) {
+        obj_turing.x = turing_dest_x;
+        obj_turing.y = turing_dest_y;
+        obj_turing.direcao = "esquerda";
+		 obj_turing.sprite_cutscene = false;
+        obj_turing.sprite_index = spr_turingparado;
+
+        fase3 = 2;
+        fase = 3;
+        dialogos = dialogos3;
+        dialogo_index = 0;
+        nome = dialogos[0].nome;
+        frase = dialogos[0].frase;
+        contador_texto = 0;
+        mostrar_texto = true;
+        texto_acelerado = false;
+        caixadetexto = true;
+    } else {
+        obj_turing.x += _dx3 / _dist3 * turing_vel;
+        obj_turing.y += _dy3 / _dist3 * turing_vel;
+    }
+    obj_turing.depth = -obj_turing.y;
+}
+
 if (caixadetexto && instance_exists(obj_turing)) {
     obj_turing.travado = true;
 }

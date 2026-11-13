@@ -10,9 +10,17 @@ var _parado_esquerda = global.alanjoga ? spr_alanparadoesquerda : spr_turingpara
 var _parado_direita = global.alanjoga ? spr_alanparadodireita : spr_turingparadodireita;
 
 if (travado) {
-	if(!global.alanjoga){
-	sprite_index=spr_turingparado;}
-	else{ sprite_index=spr_alanparado;}
+    if (!sprite_cutscene) {
+        if (direcao == "cima") {
+            sprite_index = _parado;
+        } else if (direcao == "baixo") {
+            sprite_index = _parado_cima;
+        } else if (direcao == "esquerda") {
+            sprite_index = _parado_esquerda;
+        } else if (direcao == "direita") {
+            sprite_index = _parado_direita;
+        }
+    }
     scr_collision_move(0, 0);
     if (audio_is_playing(snd_passosgrama)) audio_stop_sound(snd_passosgrama);
     if (audio_is_playing(snd_passospedra)) audio_stop_sound(snd_passospedra);

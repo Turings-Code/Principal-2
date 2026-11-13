@@ -86,3 +86,20 @@ if (caixadetexto && mostrar_texto) {
     draw_set_font(fnt_fonte2);
     draw_text_transformed(_texto_x + 40 * _f, _texto_y - 69 * _f, nome, _esc_texto * _f, _esc_texto * _f, 0);
 }
+
+if (alpha_preto > 0) {
+    draw_set_alpha(alpha_preto);
+    draw_set_color(c_black);
+    draw_rectangle(0, 0, display_get_gui_width(), display_get_gui_height(), false);
+
+    draw_set_font(fnt_fonte);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_set_color(c_white);
+    draw_set_alpha(alpha_msg);
+    draw_text(display_get_gui_width() / 2, display_get_gui_height() / 2, "Alguns minutos depois...");
+
+    draw_set_alpha(1);
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+}

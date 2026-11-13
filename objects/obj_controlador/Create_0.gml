@@ -5,3 +5,4 @@ depth=-200000;
 quartopara2 = false;
 
 global.alanjoga=true;
+global.bilhete=false;

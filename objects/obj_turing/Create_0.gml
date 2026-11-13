@@ -12,3 +12,4 @@ travado = false;
 som_passos_id = -1;
 som_pedra_id = -1;
 theosegue=false;
+sprite_cutscene = false;

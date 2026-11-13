@@ -19,31 +19,31 @@ rodadas = [
         pergunta: "Qual componente conecta todos os outros e permite que funcionem juntos?",
         alts: ["Placa-mãe", "Fonte de energia", "Cooler", "Cabo HDMI"],
         correta: 0,
-        motivo: "A placa-mãe é a placa onde todos os componentes são conectados e se comunicam."
+        motivo: "A placa-mãe é a placa onde todos os componentes \nsão conectados e se comunicam."
     },
     {
         pergunta: "Onde ficam guardados o sistema e os dados do leitor, mesmo com ele desligado?",
-        alts: ["Memória RAM", "SSD", "CPU", "Módulo NFC"],
+        alts: ["Memória RAM", "SSD", "CPU", "Sensor de Cartão"],
         correta: 1,
-        motivo: "O SSD guarda os dados de forma permanente, e eles não se perdem ao desligar."
+        motivo: "O SSD guarda os dados de forma permanente, \ne eles não se perdem ao desligar."
     },
     {
         pergunta: "Qual componente guarda temporariamente os dados que o leitor está usando agora?",
-        alts: ["SSD", "Placa-mãe", "Memória RAM", "Módulo NFC"],
+        alts: ["SSD", "Placa-mãe", "Memória RAM", "Rodrigo Makoto"],
         correta: 2,
-        motivo: "A RAM é uma memória rápida e temporária, apagada quando o leitor desliga."
+        motivo: "A RAM é uma memória rápida e temporária, \napagada quando o leitor desliga."
     },
     {
-        pergunta: "Qual componente lê o cartão do bilhete único por aproximação?",
-        alts: ["CPU", "Memória RAM", "Placa-mãe", "Módulo NFC"],
-        correta: 3,
-        motivo: "O módulo NFC capta o sinal do cartão quando ele é aproximado do leitor."
+        pergunta: "Qual componente capta as informações do cartão quando ele é aproximado?",
+		alts: ["CPU", "Memória RAM", "Placa-mãe", "Sensor de cartão"],
+		correta: 3,
+		motivo: "O sensor de cartão recebe os dados do bilhete \nquando ele é aproximado, por isso é o \ndispositivo de entrada."
     },
     {
         pergunta: "Qual componente processa as informações e decide se o saldo libera a catraca?",
-        alts: ["Módulo NFC", "CPU", "SSD", "Placa-mãe"],
+        alts: ["Sensor de Cartão", "CPU", "SSD", "Placa-mãe"],
         correta: 1,
-        motivo: "A CPU é o processador, responsável por executar os cálculos e tomar as decisões."
+        motivo: "A CPU é o processador, responsável por \nexecutar os cálculos e tomar as decisões."
     }
 ];
 

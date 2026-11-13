@@ -27,6 +27,18 @@ else if (estado == 2) {
 else if (estado == 3) {
     timer--;
     if (timer <= 0) {
+        if (instance_exists(obj_objetivos)) {
+			audio_play_sound(snd_objetivoconcluido, 1, false);
+            obj_objetivos.define_objetivo("OBJETIVO - Concerte o Leitor");
+            obj_objetivos.define_etapas([
+                { texto: "- Identifique a função de cada componente do hardware", feita: true },
+                { texto: "e concerte o encaixe corretamente", feita: true },
+                "- Passe pela catraca"
+            ]);
+			instance_create_layer(699, 362, "Instances", obj_passacatraca);
+        }
+		if(instance_exists(obj_leitor)){
+			with(obj_leitor){instance_destroy();}}
         instance_destroy();
         exit;
     }
@@ -59,13 +71,13 @@ if (estado == 0 && menu_vis >= 1) {
 
             if (acertou) {
                 rodadas_completas++;
-                //audio_play_sound(snd_tecladoxerox, 1, false);
+                audio_play_sound(snd_acertou, 1, false);
                 if (instance_exists(obj_leitor)) {
                     obj_leitor.image_index = min(rodadas_completas, obj_leitor.image_number - 1);
                 }
             } else {
                 motivo_texto = "A alternativa certa é: " + _rod.alts[_rod.correta] + "\n" + _rod.motivo;
-                //audio_play_sound(snd_errorxerox, 1, false);
+                audio_play_sound(snd_errorxerox, 1, false);
             }
             estado = 1;
         }

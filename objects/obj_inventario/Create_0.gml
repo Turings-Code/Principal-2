@@ -1,6 +1,8 @@
 margem_x = 40;
 margem_y = 220;
 image_alpha = 0.9;
+image_xscale=6.5;
+image_yscale=6.5;
 aberto = false;
 itens = [];
 max_slots = 9;
@@ -15,3 +17,4 @@ aviso_vel = 0.4;
 aviso_fade = 0.005;
 aviso_escala = 0.7;
 ganhouitem = false;
+escala_gui = 6.5;
