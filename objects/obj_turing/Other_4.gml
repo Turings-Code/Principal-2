@@ -10,3 +10,5 @@ if(room==rm_onibus){
 	x=1068; y=397;
 	theosegue=false;
 	}
+if(room=rm_bletchley2){
+	image_blend = make_color_rgb(130, 150, 210);}

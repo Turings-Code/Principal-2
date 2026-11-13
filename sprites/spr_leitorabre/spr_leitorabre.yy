@@ -36,7 +36,7 @@
   "height":165,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"e6feafff-a203-4f66-b2af-9689508c78c8","blendMode":0,"displayName":"default","isLocked":false,"name":"e6feafff-a203-4f66-b2af-9689508c78c8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e6feafff-a203-4f66-b2af-9689508c78c8","blendMode":0,"displayName":"default","isLocked":false,"name":"e6feafff-a203-4f66-b2af-9689508c78c8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"a21c9534-393f-49b7-8ebf-669cbc39913c","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"a21c9534-393f-49b7-8ebf-669cbc39913c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_leitorabre",

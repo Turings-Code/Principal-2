@@ -27,7 +27,7 @@ if(clicou && !audio_is_playing(snd_PCfinal)){
 	if (file_exists("save.json")) {
 	scr_carregar();
 	} else{
-		room_goto(rm_onibus);}
+		room_goto(rm_bletchley2);}
 	}
 
 if(clicou2 && !audio_is_playing(snd_PCfinal)){
