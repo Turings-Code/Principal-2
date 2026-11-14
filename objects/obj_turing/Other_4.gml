@@ -10,5 +10,15 @@ if(room==rm_onibus){
 	x=1068; y=397;
 	theosegue=false;
 	}
-if(room=rm_bletchley2){
-	image_blend = make_color_rgb(130, 150, 210);}
+if(room=rm_bletchley2||room==rm_bletchley1||room==rm_entradabletchley1||room==rm_entradabletchley2||room==rm_rua){
+	image_blend = make_color_rgb(130, 150, 210);
+	}
+if(room=rm_bletchley2||room==rm_bletchley1||room==rm_entradabletchley1||room==rm_entradabletchley2){
+	image_xscale=7;
+	image_yscale=7;
+	}
+if (instance_exists(obj_trocaroom) && obj_trocaroom.usar_spawn) {
+    x = obj_trocaroom.spawn_x;
+    y = obj_trocaroom.spawn_y;
+    obj_trocaroom.usar_spawn = false;
+}
