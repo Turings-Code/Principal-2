@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_pcmenu",
   "bboxMode":0,
-  "bbox_bottom":106,
+  "bbox_bottom":102,
   "bbox_left":44,
   "bbox_right":161,
   "bbox_top":5,

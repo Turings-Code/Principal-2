@@ -3,8 +3,8 @@ if (caixadetexto && instance_exists(obj_turing)) {
 }
 
 if (fase == 0) {
-    if (instance_exists(obj_onibus)) {
-        onibus_vel = lerp(onibus_vel, onibus_vel_max, onibus_acel);
+    if (instance_exists(obj_onibus2)) {
+        onibus_vel = min(onibus_vel + onibus_acel, onibus_vel_max);
         obj_onibus2.x -= onibus_vel;
 
         if (obj_onibus2.bbox_right < 0) {

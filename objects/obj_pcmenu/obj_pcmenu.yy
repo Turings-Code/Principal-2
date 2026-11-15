@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pcmenu",
-    "path":"sprites/spr_pcmenu/spr_pcmenu.yy",
+    "name":"spr_pcmenu_1",
+    "path":"sprites/spr_pcmenu_1/spr_pcmenu_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

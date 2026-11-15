@@ -4,6 +4,8 @@ if(room==rm_rua){
 	x=1211; y=637;
 	theosegue=true;
 	}
+if(room!=rm_quarto){
+	global.alanjoga=false;}
 if(room==rm_onibus){
 	image_xscale=7;
 	image_yscale=7;

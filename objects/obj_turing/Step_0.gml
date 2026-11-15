@@ -1,5 +1,5 @@
 depth = -y;
-
+show_debug_message("Mouse GUI X: " + string(device_mouse_x_to_gui(0)) + " | Mouse GUI Y: " + string(device_mouse_y_to_gui(0)));
 var _baixo = global.alanjoga ? spr_alanbaixo : spr_turingbaixo;
 var _cima = global.alanjoga ? spr_alancima : spr_turingcima;
 var _esquerda = global.alanjoga ? spr_alanesquerda : spr_turingesquerda;

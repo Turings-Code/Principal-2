@@ -9,8 +9,7 @@ aviso_escala = 0.7;
 image_alpha=0.9;
 
 blocos_def4 = [
-    [238, 671, 12, 10],
-    [1637, 754, 12, 10]
+    [238, 671, 12, 10]
 ];
 
 blocos_inst4 = [];

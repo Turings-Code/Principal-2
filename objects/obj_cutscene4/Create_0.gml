@@ -10,10 +10,10 @@ mostrar_texto = false;
 caixadetexto = false;
 som_blip_id = -1;
 fase = 0;
-
+obj_turing.travado=true;
 onibus_vel = 0;
-onibus_vel_max = 25;
-onibus_acel = 0.03;
+onibus_vel_max = 12;
+onibus_acel = 0.05;
 
 dialogos = [
     { nome: "Turing", frase: "Geralmente aqui era bastante movimentado." },

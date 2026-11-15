@@ -1,8 +1,8 @@
 if (onibus_andando && instance_exists(obj_onibus)) {
-	if(!tocou){audio_play_sound(snd_onibuschega, 1, false);tocou=true;}
-    obj_onibus.x = lerp(obj_onibus.x, -88, 0.01);
-    if (abs(obj_onibus.x - (-88)) < 1) {
-        obj_onibus.x = -88;
+    if (!tocou) { audio_play_sound(snd_onibuschega, 1, false); tocou = true; }
+    obj_onibus.x = lerp(obj_onibus.x, -60, 0.03);
+    if (abs(obj_onibus.x - (-60)) < 8) {
+        obj_onibus.x = -60;
         onibus_andando = false;
     }
 }

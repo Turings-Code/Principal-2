@@ -6,7 +6,8 @@ if (dialogo_index < array_length(dialogos)) {
     contador_texto = 0;
     mostrar_texto = true;
     texto_acelerado = false;
-}     caixadetexto = false;
+} else {
+    caixadetexto = false;
     mostrar_texto = false;
 
     if (fase == 2) {
@@ -23,3 +24,4 @@ if (dialogo_index < array_length(dialogos)) {
     if (instance_exists(obj_turing)) {
         obj_turing.travado = false;
     }
+}
