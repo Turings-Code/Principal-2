@@ -19,15 +19,16 @@ if (dialogo_index < array_length(dialogos)) {
     mostrar_texto = false;
 
     if (em_dialogos5) {
-        em_dialogos5 = false;
-        dialogo3 = false;
-        fase3 = 3;
-        if (instance_exists(obj_objetivos)) {
-            audio_play_sound(snd_objetivo, 1, false);
-            obj_objetivos.define_objetivo("OBJETIVO - Desça do Ônibus");
-            obj_objetivos.define_etapas([]);
-        }
-    } else {
+    em_dialogos5 = false;
+    dialogo3 = false;
+    fase3 = 3;
+
+    if (instance_exists(obj_objetivos)) {
+        audio_play_sound(snd_objetivo, 1, false);
+        obj_objetivos.define_objetivo("OBJETIVO - Desça do Ônibus");
+        obj_objetivos.define_etapas([]);
+    }
+} else {
         if (fase3 == 2) {
             dialogo3 = false;
             fase3 = 3;
@@ -37,7 +38,7 @@ if (dialogo_index < array_length(dialogos)) {
 
         if (fase == 1) {
             if (!instance_exists(obj_leitoraparece)) {
-                instance_create_layer(682, 441, "Instances", obj_leitoraparece);
+                instance_create_layer(793, 356, "Instances", obj_leitoraparece);
             }
             audio_play_sound(snd_objetivo, 1, false);
             obj_objetivos.define_objetivo("OBJETIVO - Concerte o Leitor");

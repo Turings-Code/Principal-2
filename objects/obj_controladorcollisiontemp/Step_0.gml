@@ -24,3 +24,29 @@ if (instance_exists(obj_turing) && aviso_espera <= 0) {
     }
 }
 
+if (room == rm_entradabletchley1) {
+    if (instance_exists(obj_cutscene4) && obj_cutscene4.fase == 2) {
+        if (!blocos_criados4) {
+            blocos_criados4 = true;
+            blocos_inst4 = [];
+
+            for (var i = 0; i < array_length(blocos_def4); i++) {
+                var _d4 = blocos_def4[i];
+                var _b4 = instance_create_layer(_d4[0], _d4[1], "Instances", obj_collisionblocktemp);
+                _b4.image_xscale = _d4[2];
+                _b4.image_yscale = _d4[3];
+                array_push(blocos_inst4, _b4);
+            }
+        }
+    } else if (blocos_criados4) {
+        blocos_criados4 = false;
+
+        for (var i = 0; i < array_length(blocos_inst4); i++) {
+            if (instance_exists(blocos_inst4[i])) {
+                instance_destroy(blocos_inst4[i]);
+            }
+        }
+
+        blocos_inst4 = [];
+    }
+}

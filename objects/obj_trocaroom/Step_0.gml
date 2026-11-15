@@ -36,6 +36,13 @@ if (estado == "nenhum" && instance_exists(obj_turing)) {
         usar_spawn = false;
         estado = "entrando";
     }
+	    else if (room == rm_onibus && _t1) {
+        dest_room = rm_entradabletchley1;
+        spawn_x = 1752;
+        spawn_y = 1224;
+        usar_spawn = true;
+        estado = "entrando";
+    }
     else if (room == rm_bletchley2) {
         if (_t1) {
             dest_room = rm_bletchley1;

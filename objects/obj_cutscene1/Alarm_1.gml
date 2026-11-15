@@ -24,6 +24,8 @@ if (dialogo_index < array_length(dialogos)) {
 			instance_create_layer(1017, 1362, "Instances", obj_theo);}
         if (instance_exists(obj_objetivos)) {
             audio_play_sound(snd_objetivo, 1, false);
+			if(!instance_exists(obj_inventario)){
+				instance_create_layer(0, 0, "Instances", obj_inventario);}
             obj_objetivos.define_objetivo("OBJETIVO - Descubra oque aconteceu");
 			obj_turing.direcao="cima";
 			obj_turing.sprite_index=spr_turingparado;

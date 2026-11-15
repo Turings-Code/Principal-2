@@ -1,4 +1,4 @@
-direcao = "baixo";
+direcao = "cima";
 xspeed_anterior = 0;
 yspeed_anterior = 0;
 offset_letrae_x = 0;
@@ -7,6 +7,8 @@ offset_letraf_x = 0;
 offset_letraf_y = -185;
 image_xscale = 8;
 image_yscale = 8;
+obj_turing.direcao = "cima";
+obj_turing.sprite_index = spr_turingparado;
 vel = 10;
 travado = false;
 som_passos_id = -1;

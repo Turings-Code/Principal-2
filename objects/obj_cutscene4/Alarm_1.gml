@@ -1,0 +1,25 @@
+dialogo_index += 1;
+
+if (dialogo_index < array_length(dialogos)) {
+    nome = dialogos[dialogo_index].nome;
+    frase = dialogos[dialogo_index].frase;
+    contador_texto = 0;
+    mostrar_texto = true;
+    texto_acelerado = false;
+}     caixadetexto = false;
+    mostrar_texto = false;
+
+    if (fase == 2) {
+        fase = 3;
+        if (instance_exists(obj_objetivos)) {
+            audio_play_sound(snd_objetivo, 1, false);
+            obj_objetivos.define_objetivo("OBJETIVO - Vá até o portão");
+            obj_objetivos.define_etapas([]);
+        }
+    } else if (fase == 4) {
+        fase = 5;
+    }
+
+    if (instance_exists(obj_turing)) {
+        obj_turing.travado = false;
+    }

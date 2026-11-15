@@ -1,9 +1,7 @@
 // fecha apertando E (depois do delay, e só se não estiver já fechando)
 if (delay > 0) {
     delay -= 1;
-} else if (!fading_out && keyboard_check_pressed(ord("E"))) {
-    fading_out = true;
-}
+} 
 
 // fade
 if (fading_out) {
@@ -19,5 +17,11 @@ if (fading_out) {
 }
 
 if (position_meeting(mouse_x, mouse_y, id)&&sprite_index==spr_leitorfechado) {
+    obj_cursormouse.mao = true;
+}
+if (position_meeting(mouse_x, mouse_y, id)&&sprite_index==spr_leitorabriu&&!instance_exists(obj_menuquiz)) {
+    obj_cursormouse.mao = true;
+}
+if (position_meeting(mouse_x, mouse_y, id)&&sprite_index==spr_leitorabre&&image_index>=17) {
     obj_cursormouse.mao = true;
 }

@@ -35,7 +35,7 @@ else if (estado == 3) {
                 { texto: "e concerte o encaixe corretamente", feita: true },
                 "- Passe pela catraca"
             ]);
-			instance_create_layer(699, 362, "Instances", obj_passacatraca);
+			instance_create_layer(793, 356, "Instances", obj_passacatraca);
         }
 		if(instance_exists(obj_leitor)){
 			with(obj_leitor){instance_destroy();}}

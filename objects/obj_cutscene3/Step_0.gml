@@ -21,7 +21,23 @@ if (transicao > 0) {
 			obj_fundoonibus.image_speed=0;
 			obj_fundoonibus.image_index=0;
 			obj_postesonibus.image_speed=0;
-			obj_poste.image_index=0;
+			var _troca = instance_create_layer(280, 517, "Instances", obj_troca);
+        _troca.image_xscale = 6;
+        _troca.image_yscale = 6;
+			if (instance_exists(obj_turing)) {
+        obj_turing.x = 442;
+        obj_turing.y = 282;
+    }
+    if (instance_exists(obj_alan)) {
+        obj_alan.x = 621;
+        obj_alan.y = 289;
+    }
+    if (instance_exists(obj_theo)) {
+        obj_theo.x = 705;
+        obj_theo.y = 328;
+        obj_theo.historico_x = [705];
+        obj_theo.historico_y = [328];
+    }
         }
     } else if (transicao == 4) {
         alpha_msg = max(alpha_msg - 0.008, 0);
@@ -62,7 +78,7 @@ if (fase3 == 1 && instance_exists(obj_turing)) {
     if (_dist3 <= turing_vel) {
         obj_turing.x = turing_dest_x;
         obj_turing.y = turing_dest_y;
-        obj_turing.direcao = "esquerda";
+        obj_turing.direcao = "cima";
 		 obj_turing.sprite_cutscene = false;
         obj_turing.sprite_index = spr_turingparado;
 

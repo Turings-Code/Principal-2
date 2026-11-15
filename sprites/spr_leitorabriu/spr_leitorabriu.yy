@@ -3,7 +3,7 @@
   "%Name":"spr_leitorabriu",
   "bboxMode":0,
   "bbox_bottom":163,
-  "bbox_left":24,
+  "bbox_left":101,
   "bbox_right":192,
   "bbox_top":0,
   "collisionKind":1,

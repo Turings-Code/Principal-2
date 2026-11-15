@@ -5,6 +5,9 @@ if (keyboard_check_pressed(ord("E")) && instance_exists(obj_letrae) && instance_
 		obj_objetivos.define_objetivo(" ");
             obj_objetivos.define_etapas([" "]);
 			audio_play_sound(snd_objetivoconcluido, 1, false);
-			show_debug_message("seta: " + string(instance_number(obj_cutscene3)) + " inst, dialogo3=" + string(obj_cutscene3.dialogo3));
+		var _bloco = instance_position(778, 365, obj_collisionblock);
+if (_bloco != noone) {
+    instance_destroy(_bloco);
+}
     }
 }

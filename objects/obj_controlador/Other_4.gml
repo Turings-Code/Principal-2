@@ -20,11 +20,13 @@ if(room==rm_introducao){
 if(room!=rm_menu&&room!=rm_inicio&&room!=rm_introducao){
 	if(!instance_exists(obj_turing)){
 		instance_create_layer(0, 0, "Instances", obj_turing);}
-	if(!instance_exists(obj_inventario)){
-		instance_create_layer(0, 0, "Instances", obj_inventario);}
 	if(!instance_exists(obj_trocaroom)){
 		instance_create_layer(0, 0, "Instances", obj_trocaroom);}
 		}
+if(room!=rm_menu&&room!=rm_inicio&&room!=rm_introducao&&room!=rm_quarto){	
+	if(!instance_exists(obj_inventario)){
+		instance_create_layer(0, 0, "Instances", obj_inventario);}
+}
 		
 if(room==rm_onibus){
 	window_set_cursor(cr_default);

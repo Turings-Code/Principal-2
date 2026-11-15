@@ -26,13 +26,13 @@ frase = dialogos[0].frase;
 
 dialogo3 = false;
 fase3 = 0;
-turing_dest_x = 430;
-turing_dest_y = 308;
+turing_dest_x = 552;
+turing_dest_y = 320;
 turing_vel = 4;
 
 dialogos3 = [
     { nome: "Alan", frase: "Caramba! Você conseguiu!" },
-	{ nome: "Turing", frase: "Isso é fascinante!" },
+	/*{ nome: "Turing", frase: "Isso é fascinante!" },
 	{ nome: "Turing", frase: "Como conseguiram reunir tantas funções em componentes tão pequenos?" },
 	{ nome: "Theo", frase: "Pesquisei e descobri que alguns princípios desses computadores" },
 	{ nome: "Theo", frase: "têm relação com seus estudos." },
@@ -40,7 +40,7 @@ dialogos3 = [
 	{ nome: "Theo", frase: "Exatamente!" },
 	{ nome: "Theo", frase: "Seu modelo teórico ajudou a estabelecer fundamentos da computação moderna." },
 	{ nome: "Theo", frase: "Até a ideia de armazenar informações lembra alguns conceitos da sua máquina." },
-	{ nome: "Turing", frase: "Incrível! Essa memória RAM me lembra a fita da minha máquina!" },
+	{ nome: "Turing", frase: "Incrível! Essa memória RAM me lembra a fita da minha máquina!" },*/
 	{ nome: "Turing", frase: "É claro que a tecnologia evoluiu muito além do que eu poderia imaginar!" },
 	{ nome: "Turing", frase: "No que mais eu influenciei no mundo atual?" }
 	
@@ -53,7 +53,9 @@ alpha_msg = 0;
 timer_trans = 0;
 
 dialogos5 = [
-    { nome: "Alan", frase: "Chegamos! Vamos ir descendo!" },
+    { nome: "Turing", frase: "É aqui! Essa é a entrada principal que mais fica perto da Mansão!" },
+	{ nome: "Turing", frase: "Ela era sempre usada para transporte de funcionários e serviços." },
+	{ nome: "Alan", frase: "Vamos descer então!" },
     { nome: "Theo", frase: "Meu pai vai me matar quando eu chegar em casa hoje..." }
 ];
 
