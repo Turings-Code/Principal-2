@@ -11,7 +11,7 @@ if (dialogo_index < array_length(dialogos)) {
     mostrar_texto = false;
     fase = 1;
 
-    if (instance_exists(obj_objetivos)) {
+    if (instance_exists(obj_objetivos)&&!global.viuenigma) {
         audio_play_sound(snd_objetivo, 1, false);
         obj_objetivos.define_objetivo("OBJETIVO - Encontre o Enigma");
         obj_objetivos.define_etapas([]);

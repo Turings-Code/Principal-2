@@ -23,7 +23,7 @@ if(room==rm_entradabletchley1){
 		obj_fundoentrada1.sprite_index=spr_entradabletchley1abre;
 		obj_fundoentrada1.image_speed=1;
 		if(!instance_exists(obj_troca)){
-			var _troca = instance_create_layer(1228, 109, "Instances", obj_troca);
+			var _troca = instance_create_layer(1228, 169, "Instances", obj_troca);
 			_troca.image_xscale=28; _troca.image_yscale=16;}
 	}
 	if(global.entrousala){

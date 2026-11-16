@@ -30,6 +30,8 @@ if (dialogo_index < array_length(dialogos)) {
         }
     }
 	    else if (fase == 6) {
+			obj_objetivos.define_objetivo("OBJETIVO - Vá até a Mansão");
+			obj_objetivos.define_etapas([]);
         fase = 7;
     }
 

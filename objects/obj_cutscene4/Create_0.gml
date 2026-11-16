@@ -41,7 +41,8 @@ dialogo2_feito = false;
 dialogo2 = false;
 
 dialogos3 = [
-    { nome: "Alan", frase: "Fala de exemplo do Alan." },
-    { nome: "Turing", frase: "Fala de exemplo do Turing." }
+    { nome: "Alan", frase: "O portão abriu!" },
+    { nome: "Theo", frase: "Vamos até a Mansão, vi que agora lá virou como um museu." },
+	{ nome: "Theo", frase: "Com certeza deve ter um Enigma em exibição!" },
 ];
 dialogo3_feito = false;
