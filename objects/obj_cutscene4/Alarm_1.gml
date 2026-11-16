@@ -17,8 +17,20 @@ if (dialogo_index < array_length(dialogos)) {
             obj_objetivos.define_objetivo("OBJETIVO - Vá até o portão");
             obj_objetivos.define_etapas([]);
         }
-    } else if (fase == 4) {
+		obj_turing.theosegue=true;
+		obj_alan.seguindo=true;
+        } else if (fase == 4) {
         fase = 5;
+        if (instance_exists(obj_objetivos)) {
+            audio_play_sound(snd_objetivo, 1, false);
+			obj_turing.theosegue=true;
+			obj_alan.seguindo=true;
+            obj_objetivos.define_objetivo("OBJETIVO - Descubra como abrir o portão");
+            obj_objetivos.define_etapas([]);
+        }
+    }
+	    else if (fase == 6) {
+        fase = 7;
     }
 
     if (instance_exists(obj_turing)) {

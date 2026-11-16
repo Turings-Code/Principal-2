@@ -3,7 +3,7 @@
   "%Name":"spr_salaentradaparede",
   "bboxMode":0,
   "bbox_bottom":149,
-  "bbox_left":34,
+  "bbox_left":32,
   "bbox_right":183,
   "bbox_top":57,
   "collisionKind":1,

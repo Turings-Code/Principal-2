@@ -14,12 +14,28 @@ var _gy = (y - camera_get_view_y(_cam)) * _f;
 
 draw_sprite_ext(sprite_index, image_index, _gx, _gy, image_xscale * _f, image_yscale * _f, image_angle, c_white, image_alpha);
 
-draw_set_color(c_red);
-draw_set_alpha(0.5);
+var _a = area_texto;
+var _indice = min(pergunta_atual, array_length(numeros) - 1);
 
-draw_rectangle(397, 59, 967, 329, false);
-draw_rectangle(547, 560, 654, 650, false);
-draw_rectangle(690, 564, 800, 647, false);
+draw_set_font(fnt_fonte);
+draw_set_color(c_white);
+draw_set_alpha(image_alpha);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+
+var _larg = _a[2] - _a[0];
+var _meio_x = (_a[0] + _a[2]) / 2;
+
+var _pergunta = reiniciado ? "Sistema Reiniciado!" : "Converta " + string(numeros[_indice]) + " para binário";
+draw_text_ext(_meio_x, _a[1] + 90, _pergunta, -1, _larg - 40);
+
+if (!reiniciado) {
+    var _txt = (digitado == "") ? "Resposta" : digitado;
+    draw_set_alpha(image_alpha * ((digitado == "") ? 0.5 : 1));
+    draw_text(_meio_x, _a[3] - 50, _txt);
+}
 
 draw_set_alpha(1);
 draw_set_color(c_white);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);

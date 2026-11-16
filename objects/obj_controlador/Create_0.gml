@@ -6,3 +6,5 @@ quartopara2 = false;
 
 global.alanjoga=true;
 global.bilhete=false;
+global.puzzlebinario=false;
+global.entrousala=false;

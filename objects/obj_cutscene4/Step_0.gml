@@ -43,6 +43,21 @@ if (fase == 3 && !dialogo2_feito && dialogo2) {
     caixadetexto = true;
 }
 
+if (fase == 5 && !dialogo3_feito && global.puzzlebinario && instance_exists(obj_turing)) {
+    if (point_in_rectangle(obj_turing.x, obj_turing.y, 915, 322, 1600, 705)) {
+        dialogo3_feito = true;
+        fase = 6;
+        dialogos = dialogos3;
+        dialogo_index = 0;
+        nome = dialogos[0].nome;
+        frase = dialogos[0].frase;
+        contador_texto = 0;
+        mostrar_texto = true;
+        texto_acelerado = false;
+        caixadetexto = true;
+    }
+}
+
 var _falando = (mostrar_texto && contador_texto < string_length(frase) && pausa_timer <= 0 && caixadetexto);
 
 if (_falando) {

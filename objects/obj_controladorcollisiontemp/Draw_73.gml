@@ -12,6 +12,8 @@ if (aviso_ativo) {
     draw_text_transformed(_cx, _cy, "Siga o Alan!", aviso_escala, aviso_escala, 0);}
 	else if(room==rm_entradabletchley1){
     draw_text_transformed(_cx, _cy, "Conclue seu Objetivo Primeiro!", aviso_escala, aviso_escala, 0);}
+	else if(room==rm_entradabletchley2){
+    draw_text_transformed(_cx, _cy, "Caminho Errado!", aviso_escala, aviso_escala, 0);}
 	else{
 	draw_text_transformed(_cx, _cy, "Oi rodrigo, se vc está lendo isso deu bug aqui em", aviso_escala, aviso_escala, 0);}
 

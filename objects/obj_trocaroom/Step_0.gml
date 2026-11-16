@@ -38,8 +38,8 @@ if (estado == "nenhum" && instance_exists(obj_turing)) {
     }
 	    else if (room == rm_onibus && _t1) {
         dest_room = rm_entradabletchley1;
-        spawn_x = 1752;
-        spawn_y = 1224;
+        spawn_x = 1743;
+        spawn_y = 1223;
         usar_spawn = true;
         estado = "entrando";
     }
@@ -112,6 +112,13 @@ if (estado == "nenhum" && instance_exists(obj_turing)) {
             estado = "entrando";
         }
     }
+		else if (room == rm_salaentrada && _t1) {
+		dest_room = rm_entradabletchley1;
+	    spawn_x = 371;
+	    spawn_y = 787;
+	    usar_spawn = true;
+	    estado = "entrando";
+}
 }
 
 if (estado == "entrando") {

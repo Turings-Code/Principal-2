@@ -4,6 +4,12 @@ if(room==rm_rua){
 	x=1211; y=637;
 	theosegue=true;
 	}
+if(room==rm_salaentrada){
+	image_xscale=8;
+	image_yscale=8;
+	x=393; y=800;
+	global.entrousala=true;
+	}
 if(room!=rm_quarto){
 	global.alanjoga=false;}
 if(room==rm_onibus){
@@ -27,3 +33,7 @@ if (instance_exists(obj_trocaroom) && obj_trocaroom.usar_spawn) {
     y = obj_trocaroom.spawn_y;
     obj_trocaroom.usar_spawn = false;
 }
+if(room==rm_entradabletchley2){
+	obj_turing.theosegue=true;
+	obj_alan.seguindo=true;
+	}

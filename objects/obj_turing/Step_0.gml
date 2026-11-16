@@ -1,5 +1,5 @@
 depth = -y;
-show_debug_message("Mouse GUI X: " + string(device_mouse_x_to_gui(0)) + " | Mouse GUI Y: " + string(device_mouse_y_to_gui(0)));
+//show_debug_message("Mouse GUI X: " + string(device_mouse_x_to_gui(0)) + " | Mouse GUI Y: " + string(device_mouse_y_to_gui(0)));
 var _baixo = global.alanjoga ? spr_alanbaixo : spr_turingbaixo;
 var _cima = global.alanjoga ? spr_alancima : spr_turingcima;
 var _esquerda = global.alanjoga ? spr_alanesquerda : spr_turingesquerda;
@@ -9,7 +9,12 @@ var _parado_cima = global.alanjoga ? spr_alanparadocima : spr_turingparadocima;
 var _parado_esquerda = global.alanjoga ? spr_alanparadoesquerda : spr_turingparadoesquerda;
 var _parado_direita = global.alanjoga ? spr_alanparadodireita : spr_turingparadodireita;
 
-if (travado) {
+var _bloqueado_objetos = instance_exists(obj_folhabinarios)
+    || instance_exists(obj_binariopuzzle)
+    || instance_exists(obj_leitor)
+    || instance_exists(obj_mapabletchley);
+
+if (travado || _bloqueado_objetos) {
     if (!sprite_cutscene) {
         if (direcao == "cima") {
             sprite_index = _parado;

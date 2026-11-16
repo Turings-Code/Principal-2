@@ -11,6 +11,28 @@ if(room==rm_quarto){
 	alarm[0] = 100;
 	obj_turing.travado=true;
 }
+if(room==rm_entradabletchley1){
+	if(global.puzzlebinario){
+		if(instance_exists(obj_troca2)){
+			with(obj_troca2){instance_destroy();}}
+		if(instance_exists(obj_onibus2)){
+			with(obj_onibus2){instance_destroy();}}
+		if(instance_exists(obj_portaofala)){
+			with(obj_portaofala){instance_destroy();}}
+			obj_cutscene4.fase=5;
+		obj_fundoentrada1.sprite_index=spr_entradabletchley1abre;
+		obj_fundoentrada1.image_speed=1;
+		if(!instance_exists(obj_troca)){
+			var _troca = instance_create_layer(1228, 109, "Instances", obj_troca);
+			_troca.image_xscale=28; _troca.image_yscale=16;}
+	}
+	if(global.entrousala){
+		if(instance_exists(obj_onibus2)){
+			with(obj_onibus2){instance_destroy();}}
+		if(instance_exists(obj_portaofala)){
+			with(obj_portaofala){instance_destroy();}}
+	}
+}
 if(room==rm_rua){
 	window_set_cursor(cr_default);
 }

@@ -15,3 +15,7 @@ som_passos_id = -1;
 som_pedra_id = -1;
 theosegue=false;
 sprite_cutscene = false;
+theotempx=0;
+tehotempy=0;
+alantempx=0;
+alantempy=0;

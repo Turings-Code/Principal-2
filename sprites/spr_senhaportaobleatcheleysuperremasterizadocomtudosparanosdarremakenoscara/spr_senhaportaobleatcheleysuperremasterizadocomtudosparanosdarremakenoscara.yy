@@ -12,14 +12,20 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"3025c896-7ff2-4a03-8b47-f6d178346305","name":"3025c896-7ff2-4a03-8b47-f6d178346305","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d75e7897-131e-4dd0-a6de-435b4ce62e22","name":"d75e7897-131e-4dd0-a6de-435b4ce62e22","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"717b98e3-0548-4fa9-851d-4a4c718b7f45","name":"717b98e3-0548-4fa9-851d-4a4c718b7f45","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8d8ff907-f22a-40a5-b880-7317def396d4","name":"8d8ff907-f22a-40a5-b880-7317def396d4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ab71a326-d9e1-4dae-95a5-dad42a116f9f","name":"ab71a326-d9e1-4dae-95a5-dad42a116f9f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b0901e54-0cbc-4511-aaf6-035edaf3f35b","name":"b0901e54-0cbc-4511-aaf6-035edaf3f35b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"21d9b3c1-3912-4b5c-ae65-19a5b0ce12c6","name":"21d9b3c1-3912-4b5c-ae65-19a5b0ce12c6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"17ae8655-f068-44d0-be03-1afd11dc3c42","name":"17ae8655-f068-44d0-be03-1afd11dc3c42","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":165,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"a21c9534-393f-49b7-8ebf-669cbc39913c","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"a21c9534-393f-49b7-8ebf-669cbc39913c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"ca114915-661f-4a7e-bdb6-2135b2768ec4","blendMode":0,"displayName":"default","isLocked":false,"name":"ca114915-661f-4a7e-bdb6-2135b2768ec4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara",
   "nineSlice":null,
@@ -49,7 +55,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":7.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -69,8 +75,26 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3025c896-7ff2-4a03-8b47-f6d178346305","path":"sprites/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e69e9e13-8bf6-47ee-a712-143063df08ca","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d75e7897-131e-4dd0-a6de-435b4ce62e22","path":"sprites/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1e81dd3c-2bb7-4bf7-a0cb-a2f4297332df","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"717b98e3-0548-4fa9-851d-4a4c718b7f45","path":"sprites/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"027a46cb-b3bd-4bac-a6fe-49141d0bd540","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8d8ff907-f22a-40a5-b880-7317def396d4","path":"sprites/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"298fc3f7-b5a3-4797-9293-ea9932059fb5","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ab71a326-d9e1-4dae-95a5-dad42a116f9f","path":"sprites/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e64789ac-f28d-46b1-8dae-eca24702d4bf","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b0901e54-0cbc-4511-aaf6-035edaf3f35b","path":"sprites/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"085603b9-9732-4fc3-871c-b6a5b36f17e2","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"21d9b3c1-3912-4b5c-ae65-19a5b0ce12c6","path":"sprites/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"64e01966-4861-4954-bccf-8afc1b304a66","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"17ae8655-f068-44d0-be03-1afd11dc3c42","path":"sprites/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara/spr_senhaportaobleatcheleysuperremasterizadocomtudosparanosdarremakenoscara.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"23507e3e-efdb-4ed0-ade7-112993d88d53","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

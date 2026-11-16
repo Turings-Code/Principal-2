@@ -2,7 +2,7 @@ if (texto == "") exit;
 if (instance_exists(obj_cutscene1)) { if (obj_cutscene1.caixadetexto) { exit; } }
 if (room == rm_menu) exit;
 
-var _popup = instance_exists(obj_quadro);
+var _popup = instance_exists(obj_mapabletchley) || instance_exists(obj_leitor);
 
 if (_popup) exit;
 
@@ -11,6 +11,7 @@ var _f = display_get_gui_width() / camera_get_view_width(_cam);
 
 var _x = margem_x * _f;
 var _y = margem_y * _f;
+//var _escala = (room == rm_salaentrada || room == rm_onibus) ? 1 : 0.7;
 var _escala = 0.7;
 var _escala_etapa = _escala * 0.7;
 

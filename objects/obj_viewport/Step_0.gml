@@ -28,6 +28,11 @@ if (!_fala) {
         _lim_y1 = 525;
         _lim_x2 = 3591;
         _lim_y2 = 1572;
+    }	else if (room == rm_entradabletchley1) {
+        _lim_x1 = 0;
+        _lim_y1 = 0;
+        _lim_x2 = 2452;
+        _lim_y2 = 1349;
     }
 
     var target_x = obj_turing.x - _w / 2;

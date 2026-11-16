@@ -1,5 +1,6 @@
 var escala = 1;
-
+if(room==rm_entradabletchley1){
+	escala = 1;}
 cam = view_camera[0];
 cam_width = 1365 * escala;   // 2047.5
 cam_height = 770 * escala;   // 1155
