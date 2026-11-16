@@ -7,3 +7,7 @@ if (room == rm_bletchley2 || room == rm_bletchley1 || room == rm_entradabletchle
 else {
     image_blend = c_white;
 }
+if(room==rm_mansao){
+	image_xscale=8;
+	image_yscale=8;
+	}

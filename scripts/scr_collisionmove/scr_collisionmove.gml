@@ -5,7 +5,7 @@ function scr_collision_move(move_x, move_y)
         return place_meeting(_x, _y, obj_collisionblock)
         || place_meeting(_x, _y, obj_collisionblocktemp)
         || place_meeting(_x, _y, obj_collisionblockturing)
-        || (instance_exists(obj_turing) && room!=rm_onibus && place_meeting(_x, _y, obj_alan))
+        || (instance_exists(obj_turing) && instance_exists(obj_alan) && room!=rm_onibus && !obj_alan.seguindo &&place_meeting(_x, _y, obj_alan))
         || (instance_exists(obj_turing) && !obj_turing.theosegue && place_meeting(_x, _y, obj_theo))
         || place_meeting(_x, _y, obj_turing);
     };

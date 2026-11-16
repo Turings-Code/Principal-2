@@ -3,6 +3,7 @@ if (instance_exists(obj_cutscene2) && obj_cutscene2.caixadetexto) exit;
 if (instance_exists(obj_cutscene3) && obj_cutscene3.caixadetexto) exit;
 if (instance_exists(obj_cutscene4) && obj_cutscene4.caixadetexto) exit;
 if (instance_exists(obj_cutscene5) && obj_cutscene5.caixadetexto) exit;
+if (instance_exists(obj_cutscene6) && obj_cutscene6.caixadetexto) exit;
 if (room == rm_introducao || room == rm_menu) exit;
 
 var _popup = instance_exists(obj_leitor) || (instance_exists(obj_cutscene3) && obj_cutscene3.transicao != 0)

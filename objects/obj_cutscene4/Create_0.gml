@@ -22,7 +22,7 @@ if(global.entrousala){fase=5;
 	}
 dialogos = [
     { nome: "Turing", frase: "Geralmente aqui era bastante movimentado." },
-	{ nome: "Turing", frase: "Tinham vários seguranças, afinal era um local secreto" },
+	{ nome: "Turing", frase: "Tinham vários seguranças, afinal era um local secreto." },
 	{ nome: "Alan", frase: "Como vamos entrar por aqui?" },
 	{ nome: "Turing", frase: "Deve ter um portão logo acima." },
 ];

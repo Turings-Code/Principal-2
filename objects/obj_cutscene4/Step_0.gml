@@ -44,7 +44,7 @@ if (fase == 3 && !dialogo2_feito && dialogo2) {
 }
 
 if (fase == 5 && !dialogo3_feito && global.puzzlebinario && instance_exists(obj_turing)) {
-    if (point_in_rectangle(obj_turing.x, obj_turing.y, 915, 322, 1600, 705)) {
+    if (point_in_rectangle(obj_turing.x, obj_turing.y, 915, 322, 1600, 565)) {
         dialogo3_feito = true;
         fase = 6;
         dialogos = dialogos3;
