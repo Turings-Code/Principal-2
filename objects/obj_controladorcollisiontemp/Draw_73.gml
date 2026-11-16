@@ -14,7 +14,11 @@ if (aviso_ativo) {
     draw_text_transformed(_cx, _cy, "Conclue seu Objetivo Primeiro!", aviso_escala, aviso_escala, 0);}
 	else if(room==rm_entradabletchley2){
     draw_text_transformed(_cx, _cy, "Caminho Errado!", aviso_escala, aviso_escala, 0);}
+	else if(room==rm_mansao){
+    draw_text_transformed(_cx, _cy, "Item Necessário: Chave de Segurança", aviso_escala, aviso_escala, 0);}
 	else{
+		if(!audio_is_playing(snd_portatrancada)){
+			audio_play_sound(snd_portatrancada, 1, false);}
 	draw_text_transformed(_cx, _cy, "Oi rodrigo, se vc está lendo isso deu bug aqui em", aviso_escala, aviso_escala, 0);}
 
     draw_set_alpha(1);

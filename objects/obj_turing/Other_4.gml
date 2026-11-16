@@ -14,6 +14,11 @@ if(room==rm_mansao){
 	image_xscale=8;
 	image_yscale=8;
 	}
+if(room==rm_salafinal){
+	image_xscale=8;
+	image_yscale=8;
+
+	}
 if(room!=rm_quarto){
 	global.alanjoga=false;}
 if(room==rm_onibus){

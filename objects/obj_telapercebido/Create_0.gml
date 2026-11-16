@@ -1,5 +1,5 @@
-image_xscale=7;
-image_yscale=7;
-depth=-30000;
+image_xscale=5.6;
+image_yscale=5.6;
+depth=-16000;
 alarm[0] = 300;
 frame_anterior = image_index;

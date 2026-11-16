@@ -4,10 +4,11 @@ if (instance_exists(obj_cutscene3) && obj_cutscene3.caixadetexto) exit;
 if (instance_exists(obj_cutscene4) && obj_cutscene4.caixadetexto) exit;
 if (instance_exists(obj_cutscene5) && obj_cutscene5.caixadetexto) exit;
 if (instance_exists(obj_cutscene6) && obj_cutscene6.caixadetexto) exit;
+if (instance_exists(obj_cutscene7) && obj_cutscene7.caixadetexto) exit;
 if (room == rm_introducao || room == rm_menu) exit;
 
 var _popup = instance_exists(obj_leitor) || (instance_exists(obj_cutscene3) && obj_cutscene3.transicao != 0)
-|| (instance_exists(obj_folhabinarios)) || (instance_exists(obj_mapabletchley));
+|| (instance_exists(obj_folhabinarios)) || (instance_exists(obj_mapabletchley) || (instance_exists(obj_telapercebido)));
 
 var _bl = array_get_index(itens, spr_iconebilhete);
 if (global.bilhete && _bl == -1 && array_length(itens) < max_slots) {
@@ -15,6 +16,13 @@ if (global.bilhete && _bl == -1 && array_length(itens) < max_slots) {
 }
 else if (!global.bilhete && _bl != -1) {
     array_delete(itens, _bl, 1);
+}
+var _cs = array_get_index(itens, spr_iconechaveseguranca);
+if (global.chaveseguranca && _cs == -1 && array_length(itens) < max_slots) {
+    array_push(itens, spr_iconechaveseguranca);
+}
+else if (!global.chaveseguranca && _cs != -1) {
+    array_delete(itens, _cs, 1);
 }
 
 cell_w = sprite_get_width(spr_iconemochila) * escala_gui;

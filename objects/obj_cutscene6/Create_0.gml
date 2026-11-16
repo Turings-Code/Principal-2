@@ -19,3 +19,10 @@ dialogos = [
 dialogo_index = 0;
 nome = dialogos[0].nome;
 frase = dialogos[0].frase;
+
+if (variable_global_exists("viuenigma") && global.viuenigma) {
+    caixadetexto = false;
+    mostrar_texto = false;
+    dialogo_index = array_length(dialogos) - 1;
+    alarm[1] = 1;
+}

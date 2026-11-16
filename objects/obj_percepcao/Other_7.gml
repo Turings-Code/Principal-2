@@ -10,16 +10,21 @@ if (estado == 0) {
         if (instance_exists(obj_diagolopercebeu) && !obj_diagolopercebeu.ja_falou) {
     obj_diagolopercebeu.ja_falou = true;
 	if (instance_exists(npc_alvo)) obj_diagolopercebeu.numero_npc = npc_alvo.numero;
-        with (obj_diagolopercebeu) {
-        ativo = true;
-        caixadetexto = true;
-        nome = "Operário";
-        frase = "Ei garoto, tá fazendo oque aqui?";
-        contador_texto = 0;
-        texto_acelerado = false;
-        pausa_timer = 0;
-        mostrar_texto = true;
-    }
+                with (obj_diagolopercebeu) {
+            ativo = true;
+            caixadetexto = true;
+            if (numero_npc == 4) {
+                nome = "Segurança";
+                frase = "Beep Beep! Intruso Encontrado!";
+            } else {
+                nome = "Operário";
+                frase = "Ei garoto, tá fazendo oque aqui?";
+            }
+            contador_texto = 0;
+            texto_acelerado = false;
+            pausa_timer = 0;
+            mostrar_texto = true;
+        }
 }
 percebeu=true;
 audio_play_sound(snd_percebeu, 1, false);

@@ -2,7 +2,7 @@ if (texto == "") exit;
 if (instance_exists(obj_cutscene1)) { if (obj_cutscene1.caixadetexto) { exit; } }
 if (room == rm_menu) exit;
 
-var _popup = instance_exists(obj_mapabletchley) || instance_exists(obj_leitor);
+var _popup = instance_exists(obj_mapabletchley) || instance_exists(obj_leitor) || (instance_exists(obj_telapercebido));
 
 if (_popup) exit;
 

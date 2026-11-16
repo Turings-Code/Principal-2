@@ -12,7 +12,10 @@ with (obj_diagolopercebeu) {
     numero_npc = 0;
 }
 if(room==rm_mansao){
-	show_debug_message("resetou");
+	obj_turing.x=1348;
+	obj_turing.y=5270;
+	obj_turing.theosegue=false;
+	obj_alan.seguindo=false;
 }
 
 room_restart();

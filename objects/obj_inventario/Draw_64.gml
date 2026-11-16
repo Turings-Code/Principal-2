@@ -4,10 +4,11 @@ if (instance_exists(obj_cutscene3) && obj_cutscene3.caixadetexto) exit;
 if (instance_exists(obj_cutscene4) && obj_cutscene4.caixadetexto) exit;
 if (instance_exists(obj_cutscene5) && obj_cutscene5.caixadetexto) exit;
 if (instance_exists(obj_cutscene6) && obj_cutscene6.caixadetexto) exit;
+if (instance_exists(obj_cutscene7) && obj_cutscene7.caixadetexto) exit;
 if (room == rm_introducao || room == rm_menu) exit;
 
 var _popup = instance_exists(obj_leitor) || (instance_exists(obj_cutscene3) && obj_cutscene3.transicao != 0)
-|| (instance_exists(obj_folhabinarios)) || (instance_exists(obj_mapabletchley));
+|| (instance_exists(obj_folhabinarios)) || (instance_exists(obj_mapabletchley)) || (instance_exists(obj_telapercebido));
 var _gw = display_get_gui_width();
 var _gh = display_get_gui_height();
 

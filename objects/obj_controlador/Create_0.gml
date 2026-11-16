@@ -8,3 +8,5 @@ global.alanjoga=true;
 global.bilhete=false;
 global.puzzlebinario=false;
 global.entrousala=false;
+global.viuenigma=false;
+global.chaveseguranca = false;

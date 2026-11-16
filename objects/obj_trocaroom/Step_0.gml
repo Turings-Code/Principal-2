@@ -119,14 +119,30 @@ if (estado == "nenhum" && instance_exists(obj_turing)) {
             estado = "entrando";
         }
     }
-		else if (room == rm_salaentrada && _t1) {
+				else if (room == rm_salaentrada && _t1) {
 		dest_room = rm_entradabletchley1;
 	    spawn_x = 371;
 	    spawn_y = 787;
 	    usar_spawn = true;
 	    estado = "entrando";
 }
+				else if (room == rm_mansao && _t1) {
+		dest_room = rm_salafinal;
+		spawn_x = 1685;
+		spawn_y = 2720;
+		usar_spawn = true;
+		estado = "entrando";
 }
+		else if (room == rm_salafinal && _t1) {
+		dest_room = rm_mansao;
+		spawn_x = 1489;
+		spawn_y = 4998;
+		usar_spawn = true;
+		estado = "entrando";
+}
+}
+
+
 
 if (estado == "entrando") {
     alpha += 0.02;
