@@ -178,8 +178,8 @@ if (caixadetexto) {
     } else if (fase == 5) {
         if (nome == "Turing" && instance_exists(obj_turingcutscene)) {
             _alvo = obj_turingcutscene;
-        } else if (nome == "Theo" && instance_exists(obj_theocutscene)) {
-            _alvo = obj_theocutscene;
+        } else if (nome == "Theo" && instance_exists(obj_theo)) {
+            _alvo = obj_theo;
         } else if (nome == "Mãe" && instance_exists(obj_mae)) {
             _alvo = obj_mae;
         } else if (nome == "Alan" && instance_exists(obj_turing)) {

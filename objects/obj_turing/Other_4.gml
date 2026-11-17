@@ -76,3 +76,5 @@ if(global.perseguicao){
 	if(instance_exists(obj_alan)){
 		with(obj_alan){instance_destroy();}}
 }
+if(room==rm_entradabletchley1){
+	travado=true;}

@@ -11,3 +11,8 @@ if(room==rm_mansao){
 	image_xscale=8;
 	image_yscale=8;
 	}
+	
+if(room==rm_entradabletchley12){
+	image_blend = make_color_rgb(130, 150, 210);
+	image_xscale=7;
+		image_yscale=7;}

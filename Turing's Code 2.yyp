@@ -301,6 +301,7 @@
     {"id":{"name":"spr_onibus","path":"sprites/spr_onibus/spr_onibus.yy",},},
     {"id":{"name":"spr_onibus2","path":"sprites/spr_onibus2/spr_onibus2.yy",},},
     {"id":{"name":"spr_onibusabre","path":"sprites/spr_onibusabre/spr_onibusabre.yy",},},
+    {"id":{"name":"spr_onibusabriu","path":"sprites/spr_onibusabriu/spr_onibusabriu.yy",},},
     {"id":{"name":"spr_onibusdentro_1","path":"sprites/spr_onibusdentro_1/spr_onibusdentro_1.yy",},},
     {"id":{"name":"spr_onibusdentro","path":"sprites/spr_onibusdentro/spr_onibusdentro.yy",},},
     {"id":{"name":"spr_operario1","path":"sprites/spr_operario1/spr_operario1.yy",},},
