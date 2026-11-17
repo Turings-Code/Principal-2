@@ -4,6 +4,7 @@ if (onibus_andando && instance_exists(obj_onibus)) {
     if (abs(obj_onibus.x - (-60)) < 8) {
         obj_onibus.x = -60;
         onibus_andando = false;
+		obj_onibus.sprite_index=spr_onibusabre;
     }
 }
 
