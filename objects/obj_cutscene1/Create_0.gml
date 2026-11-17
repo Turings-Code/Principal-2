@@ -31,7 +31,7 @@ frase = dialogos[0].frase;
 
 dialogos3 = [
     { nome: "Mãe", frase: "Alan, quem é esse cara?" },
-    /*{ nome: "Alan", frase: "Senhor Turing?" },
+    { nome: "Alan", frase: "Senhor Turing?" },
     { nome: "Turing", frase: "Garotos! O que aconteceu?" },
     { nome: "Theo", frase: "Porque você está aqui senhor Turing?" },
 	{ nome: "Mãe", frase: "Vocês dois! Porque esse estranho está na nossa casa?" },
@@ -53,7 +53,7 @@ dialogos3 = [
 	{ nome: "Mãe", frase: "Vocês querem ir para Bletchley Park? É só agendar uma visita ué." },
 	{ nome: "Theo", frase: "Tem como agendar visitas pra lá?" },
 	{ nome: "Mãe", frase: "Claro que sim! Sempre tem uns turistas por lá." },
-	{ nome: "Alan", frase: "Vamos agendar então! Venha aqui comigo, senhor Turing!" },*/
+	{ nome: "Alan", frase: "Vamos agendar então! Venha aqui comigo, senhor Turing!" },
 ];
 
 pontos_x = [1625, 2278, 2800, 2838, 3069];
@@ -68,7 +68,7 @@ fase_antes = 0;
 
 dialogos4 = [
     { nome: "Alan", frase: "Meu computador não está funcionando!" },
-    /*{ nome: "Turing", frase: "Que máquina interessante! Isso são os computadores modernos?" },
+    { nome: "Turing", frase: "Que máquina interessante! Isso são os computadores modernos?" },
 	{ nome: "Alan", frase: "Sim! Porém parece que ele não quer pegar agora." },
 	{ nome: "Alan", frase: "Espera! Oque aconteceu com meu computador? Parece está faltando peças!" },
 	{ nome: "Theo", frase: "O que aconteceu? Você ligou na tomada?" },
@@ -85,7 +85,7 @@ dialogos4 = [
 	{ nome: "Theo", frase: "Se não fizermos isso, nossa tecnologia se perderá!" },
 	{ nome: "Alan", frase: "Vamos pegar um ônibus até Bletchley Park e encontrar um Enigma!" },
 	{ nome: "Theo", frase: "É isso! Vamos te levar de volta ainda hoje, senhor Turing!" },
-	{ nome: "Turing", frase: "Ok então..." },*/
+	{ nome: "Turing", frase: "Ok então..." },
 ];
 
 pontos2_x = [2809, 2797, 1850, 1683, 670];

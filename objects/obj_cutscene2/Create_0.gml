@@ -22,14 +22,14 @@ tocou=false;
 
 dialogos = [
     { nome: "Alan", frase: "O próximo ônibus deve chegar daqui alguns minutos." },
-    /*{ nome: "Theo", frase: "Alan, como você planeja entrar lá essas horas?" },
+    { nome: "Theo", frase: "Alan, como você planeja entrar lá essas horas?" },
 	{ nome: "Alan", frase: "Já sabemos como é o local, só precisamos passar pela segurança." },
 	{ nome: "Turing", frase: "Garotos, se Bletchley Park ainda é como na minha época," },
 	{ nome: "Turing", frase: "Não vai ser fácil entrar lá sem ser percebido." },
 	{ nome: "Theo", frase: "Vou pesquisar se ainda está aberto agora..." },
 	{ nome: "Theo", frase: "Eita! O que aconteceu com meu celular? Ele simplesmente desligou!" },
 	{ nome: "Alan", frase: "Nós precisamos nos apressar!" },
-	{ nome: "Alan", frase: "Ah! Ai está o ônibus! Vamos senhor Turing!" },*/
+	{ nome: "Alan", frase: "Ah! Ai está o ônibus! Vamos senhor Turing!" },
 ];
 
 dialogo_index = 0;

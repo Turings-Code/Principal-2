@@ -39,9 +39,6 @@ if (caixadetexto) {
     var _w = camera_get_view_width(_cam);
     var _h = camera_get_view_height(_cam);
 
-    var _centro_x = camera_get_view_x(_cam) + _w / 2;
-    var _centro_y = camera_get_view_y(_cam) + _h / 2;
-
     _w = lerp(_w, 1170, cam_zoom_vel);
     _h = lerp(_h, 660, cam_zoom_vel);
 
@@ -50,9 +47,19 @@ if (caixadetexto) {
 
     camera_set_view_size(_cam, _w, _h);
 
-    if (nome != "Alan") {
-        camera_set_view_pos(_cam, _centro_x - _w / 2, _centro_y - _h / 2);
+    var _alvo_x = camera_get_view_x(_cam) + _w / 2;
+    var _alvo_y = camera_get_view_y(_cam) + _h / 2;
+
+    if (nome == "Alan" && instance_exists(obj_turing)) {
+        _alvo_x = obj_turing.x;
+        _alvo_y = obj_turing.y;
     }
+    else if (nome == "Mae" && instance_exists(obj_mae)) {
+        _alvo_x = obj_mae.x;
+        _alvo_y = obj_mae.y;
+    }
+
+    camera_set_view_pos(_cam, _alvo_x - _w / 2, _alvo_y - _h / 2);
 }
 
 if (caixadetexto && mostrar_texto) {

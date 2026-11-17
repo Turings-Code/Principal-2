@@ -5,7 +5,7 @@ if (instance_exists(obj_cutscene4) && obj_cutscene4.caixadetexto) exit;
 if (instance_exists(obj_cutscene5) && obj_cutscene5.caixadetexto) exit;
 if (instance_exists(obj_cutscene6) && obj_cutscene6.caixadetexto) exit;
 if (instance_exists(obj_cutscene7) && obj_cutscene7.caixadetexto) exit;
-if (room == rm_introducao || room == rm_menu) exit;
+if (room == rm_introducao || room == rm_menu || room == rm_creditos) exit;
 
 var _popup = instance_exists(obj_leitor) || (instance_exists(obj_cutscene3) && obj_cutscene3.transicao != 0)
 || (instance_exists(obj_folhabinarios)) || (instance_exists(obj_mapabletchley) || (instance_exists(obj_telapercebido)));
