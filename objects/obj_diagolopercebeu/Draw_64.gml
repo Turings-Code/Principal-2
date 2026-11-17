@@ -33,7 +33,7 @@ if (caixadetexto) {
 }
 
 if (frase != "Nada" && mostrar_texto) {
-    var _frase_percebido = (frase == "Ei garoto, tá fazendo oque aqui?");
+       var _frase_percebido = (frase == "Ei garoto, tá fazendo oque aqui?" || frase == "Beep Beep! Intruso Encontrado!");
 
     if (!_frase_percebido && mouse_check_button_pressed(mb_left)) {
         if (contador_texto >= string_length(frase)) {

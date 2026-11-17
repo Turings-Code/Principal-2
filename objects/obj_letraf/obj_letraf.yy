@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_letrae",
-    "path":"sprites/spr_letrae/spr_letrae.yy",
+    "name":"spr_letraf",
+    "path":"sprites/spr_letraf/spr_letraf.yy",
   },
   "spriteMaskId":null,
   "visible":true,

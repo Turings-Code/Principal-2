@@ -1,4 +1,5 @@
 if(destrancada){
+	image_speed = 0;
 if (!instance_exists(obj_turing)) exit;
 
 

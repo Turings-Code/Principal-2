@@ -1,0 +1,1 @@
+obj_turing.travado=false;

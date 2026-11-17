@@ -6,7 +6,7 @@ function scr_collisiontheo(move_x, move_y)
     repeat (_steps_x)
     {
         if (!place_meeting(x + _dir_x, y, obj_collisionblock)
-        && !(instance_exists(obj_alan) && obj_alan.seguindo && place_meeting(x + _dir_x, y, obj_alan))
+        && !(instance_exists(obj_alan) && !obj_alan.seguindo && place_meeting(x + _dir_x, y, obj_alan))
         && !(instance_exists(obj_turing) && place_meeting(x + _dir_x, y, obj_turing))) {
             x += _dir_x;
         } else {
@@ -20,7 +20,7 @@ function scr_collisiontheo(move_x, move_y)
     repeat (_steps_y)
     {
         if (!place_meeting(x, y + _dir_y, obj_collisionblock)
-        && !(instance_exists(obj_alan) && obj_alan.seguindo && place_meeting(x, y + _dir_y, obj_alan))
+        && !(instance_exists(obj_alan) && !obj_alan.seguindo && place_meeting(x, y + _dir_y, obj_alan))
         && !(instance_exists(obj_turing) && place_meeting(x, y + _dir_y, obj_turing))) {
             y += _dir_y;
         } else {

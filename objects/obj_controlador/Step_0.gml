@@ -17,3 +17,17 @@ if (wx != cx || wy != cy) {
     window_mouse_set(cx, cy);
 }
 }
+
+if (fundo_ligando) {
+    var _fundo = layer_background_get_id(layer_get_id("Background"));
+    var _n = sprite_get_number(spr_mansaofundoliga);
+    if (layer_background_get_index(_fundo) >= _n - 1) {
+        layer_background_sprite(_fundo, spr_mansaofundoligado);
+        layer_background_index(_fundo, 0);
+        layer_background_speed(_fundo, 0);
+        fundo_ligando = false;
+        global.mansaoligada = true;
+		global.iniciar_dialogo3 = true;
+		
+    }
+}

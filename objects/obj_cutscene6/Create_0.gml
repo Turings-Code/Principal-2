@@ -26,3 +26,27 @@ if (variable_global_exists("viuenigma") && global.viuenigma) {
     dialogo_index = array_length(dialogos) - 1;
     alarm[1] = 1;
 }
+
+dialogos2 = [
+    { nome: "Alan", frase: "É aqui! Esse lugar está meio escuro né?" },
+    { nome: "Theo", frase: "Deve ter algum interruptor por aqui." }
+];
+dialogo2_feito = false;
+em_dialogo2 = false;
+
+dialogos3 = [
+    { nome: "Turing", frase: "Caramba, que tecnologia fascinante!" },
+    { nome: "Theo", frase: "Vamos nos apressar, antes que alguém nos veja!" },
+	{ nome: "Alan", frase: "Deve dar pra usar algum computador pra desativar a segurança." },
+];
+
+dialogo3_feito = false;
+em_dialogo3 = false;
+
+dialogos4 = [
+    { nome: "Turing", frase: "Consegui! Agora devemos conseguir pegar o Enigma!" },
+    { nome: "Theo", frase: "Vamos voltar até lá então!" }
+];
+
+dialogo4_feito = false;
+em_dialogo4 = false;

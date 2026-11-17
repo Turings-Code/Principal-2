@@ -1,3 +1,35 @@
+if (transicao > 0 && transicao < 3) {
+    if (instance_exists(obj_turing)) {
+        obj_turing.travado = true;
+    }
+
+    if (transicao == 1) {
+        alpha_preto = min(alpha_preto + 0.008, 1);
+        if (alpha_preto >= 1) {
+            if (instance_exists(obj_turing) && instance_exists(obj_alan)) {
+                var _tx = obj_turing.x;
+                var _ty = obj_turing.y;
+                obj_turing.x = obj_alan.x;
+                obj_turing.y = obj_alan.y;
+                obj_alan.x = _tx;
+                obj_alan.y = _ty;
+				obj_turing.direcao="cima";
+            }
+            global.alanjoga = true;
+            with (obj_alan) {
+                instance_destroy();
+            }
+            transicao = 2;
+        }
+    } else if (transicao == 2) {
+        alpha_preto = max(alpha_preto - 0.008, 0);
+        if (alpha_preto <= 0) {
+            transicao = 3;
+            instance_create_layer(0, 0, "Instances", obj_cutscene8);
+        }
+    }
+}
+
 if (caixadetexto && instance_exists(obj_turing)) {
     obj_turing.travado = true;
 }
@@ -13,6 +45,21 @@ if (dialogo1 && fase == 0) {
     caixadetexto = true;
 }
 
+
+if (variable_global_exists("iniciar_dialogo_cutscene7") && global.iniciar_dialogo_cutscene7 && !dialogo2_feito && !caixadetexto) {
+    global.iniciar_dialogo_cutscene7 = false;
+    dialogo2_feito = true;
+    em_dialogo2 = true;
+
+    dialogos = dialogos2;
+    dialogo_index = 0;
+    nome = dialogos[0].nome;
+    frase = dialogos[0].frase;
+    contador_texto = 0;
+    mostrar_texto = true;
+    texto_acelerado = false;
+    caixadetexto = true;
+}
 var _falando = (mostrar_texto && contador_texto < string_length(frase) && pausa_timer <= 0 && caixadetexto);
 
 if (_falando) {
@@ -20,9 +67,10 @@ if (_falando) {
         som_blip_id = audio_play_sound(snd_textblip, 10, true);
     }
     audio_sound_pitch(som_blip_id, texto_acelerado ? 1.2 : 1);
-} else {
-    if (audio_is_playing(snd_textblip)) {
-        audio_stop_sound(snd_textblip);
+ } else {
+    if (som_blip_id != -1 && audio_is_playing(som_blip_id)) {
+        audio_stop_sound(som_blip_id);
+        som_blip_id = -1;
     }
 }
 

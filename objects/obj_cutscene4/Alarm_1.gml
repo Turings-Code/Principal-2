@@ -30,6 +30,7 @@ if (dialogo_index < array_length(dialogos)) {
         }
     }
 	    else if (fase == 6) {
+			audio_play_sound(snd_objetivo, 1, false);
 			obj_objetivos.define_objetivo("OBJETIVO - Vá até a Mansão");
 			obj_objetivos.define_etapas([]);
         fase = 7;

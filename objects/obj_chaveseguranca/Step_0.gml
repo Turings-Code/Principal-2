@@ -6,7 +6,15 @@ if (keyboard_check_pressed(ord("E")) && instance_exists(obj_letrae) && instance_
     obj_inventario.ganhouitem = true;
 	global.chaveseguranca=true;
 }
+obj_objetivos.define_objetivo("OBJETIVO - Desative a Segurança");
+obj_objetivos.define_etapas([
+    { texto: " - Ache a Chave de Segurança", feita: true },
+    " - Passe pelo Sistema de Segurança",
+    "e desative"
+]);
+audio_play_sound(snd_objetivoconcluido, 1, false);
 audio_play_sound(snd_itemnovo, 1, false);
 	instance_destroy();
     }
 }
+depth=obj_turing.depth+1;

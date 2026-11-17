@@ -16,6 +16,12 @@ if(room==rm_mansao){
 	obj_turing.y=5270;
 	obj_turing.theosegue=false;
 	obj_alan.seguindo=false;
+	global.viuenigma=false;
+	global.chaveseguranca=false;
+	global.mansaoligada=false;
+	global.iniciar_dialogo3 = false;
+	obj_objetivos.define_objetivo("");
+	global.desativouseguranca=false;
 }
 
 room_restart();

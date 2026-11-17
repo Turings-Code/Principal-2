@@ -11,13 +11,5 @@ if (keyboard_check_pressed(ord("E")) && instance_exists(obj_letrae) && instance_
 		obj_alan.x=obj_turing.x-150;
 		obj_theo.y=obj_turing.y;
 		obj_theo.x=obj_turing.x+150;*/
-		with (obj_controladorcollisiontemp) {
-    for (var i = 0; i < array_length(blocos_inst4); i++) {
-        if (instance_exists(blocos_inst4[i])) {
-            instance_destroy(blocos_inst4[i]);
-        }
-    }
-    blocos_inst4 = [];
-}
-    }
-}
+
+}}

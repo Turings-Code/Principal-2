@@ -2,6 +2,64 @@ if (caixadetexto && instance_exists(obj_turing)) {
     obj_turing.travado = true;
 }
 
+if (variable_global_exists("iniciar_dialogo4") && global.iniciar_dialogo4 && !dialogo4_feito && !caixadetexto) {
+    global.iniciar_dialogo4 = false;
+    dialogo4_feito = true;
+    em_dialogo4 = true;
+
+    dialogos = dialogos4;
+    dialogo_index = 0;
+    nome = dialogos[0].nome;
+    frase = dialogos[0].frase;
+    contador_texto = 0;
+    mostrar_texto = true;
+    texto_acelerado = false;
+    caixadetexto = true;
+}
+
+if (variable_global_exists("iniciar_dialogo3") && global.iniciar_dialogo3 && !dialogo3_feito && !caixadetexto) {
+    global.iniciar_dialogo3 = false;
+    dialogo3_feito = true;
+    em_dialogo3 = true;
+
+    dialogos = dialogos3;
+    dialogo_index = 0;
+    nome = dialogos[0].nome;
+    frase = dialogos[0].frase;
+    contador_texto = 0;
+    mostrar_texto = true;
+    texto_acelerado = false;
+    caixadetexto = true;
+}
+
+if (!dialogo2_feito && !caixadetexto && instance_exists(obj_turing)) {
+    if (collision_rectangle(2367, 1061, 2658, 1351, obj_turing, false, false) != noone) {
+        dialogo2_feito = true;
+        em_dialogo2 = true;
+		audio_play_sound(snd_objetivo, 1, false);
+        obj_turing.theosegue = false;
+
+        if (instance_exists(obj_alan)) {
+            obj_alan.seguindo = false;
+            obj_alan.x = 2672;
+            obj_alan.y = 1204;
+        }
+        if (instance_exists(obj_theo)) {
+            obj_theo.x = 2911;
+            obj_theo.y = 1347;
+        }
+
+        dialogos = dialogos2;
+        dialogo_index = 0;
+        nome = dialogos[0].nome;
+        frase = dialogos[0].frase;
+        contador_texto = 0;
+        mostrar_texto = true;
+        texto_acelerado = false;
+        caixadetexto = true;
+    }
+}
+
 var _falando = (mostrar_texto && contador_texto < string_length(frase) && pausa_timer <= 0 && caixadetexto);
 
 if (_falando) {
@@ -10,8 +68,9 @@ if (_falando) {
     }
     audio_sound_pitch(som_blip_id, texto_acelerado ? 1.2 : 1);
 } else {
-    if (audio_is_playing(snd_textblip)) {
-        audio_stop_sound(snd_textblip);
+    if (som_blip_id != -1 && audio_is_playing(som_blip_id)) {
+        audio_stop_sound(som_blip_id);
+        som_blip_id = -1;
     }
 }
 
