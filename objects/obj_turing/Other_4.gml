@@ -36,7 +36,7 @@ else {
 	vel = 8;
     image_blend = c_white;
 }
-if(room=rm_bletchley2||room==rm_bletchley1||room==rm_entradabletchley1||room==rm_entradabletchley2){
+if(room=rm_bletchley2||room==rm_bletchley1||room==rm_entradabletchley1||room==rm_entradabletchley2||room==rm_entradabletchley12){
 	image_xscale=7;
 	image_yscale=7;
 	}

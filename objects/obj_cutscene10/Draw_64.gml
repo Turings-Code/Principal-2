@@ -13,8 +13,8 @@ var _esc_texto = 0.8;
 var _nome = string_trim(nome);
 var _spr_caixa = spr_caixadefalaalan;
 
-if (_nome == "Sistema") {
-    _spr_caixa = spr_caixadefalasistema;
+if (_nome == "Mãe") {
+    _spr_caixa = spr_caixadefalamae;
 } else if (_nome == "Turing") {
     _spr_caixa = spr_caixadefalaturing;
 } else if (_nome == "Theo") {
@@ -35,40 +35,7 @@ if (caixadetexto) {
 }
 
 if (caixadetexto && mostrar_texto) {
-
-    if (mouse_check_button_pressed(mb_left)) {
-        if (contador_texto >= string_length(frase)) {
-            mostrar_texto = false;
-            alarm[1] = 10;
-        } else {
-            texto_acelerado = true;
-        }
-    }
-
-    var _velocidade = letras_por_frame;
-    if (texto_acelerado) {
-        _velocidade += vel;
-    }
-
-    if (pausa_timer > 0) {
-        pausa_timer -= 1;
-    } else {
-        var _contador_anterior = contador_texto;
-        contador_texto += _velocidade;
-        if (contador_texto > string_length(frase)) {
-            contador_texto = string_length(frase);
-            texto_acelerado = false;
-        }
-
-        var _letra_revelada = string_char_at(frase, floor(contador_texto));
-        if (floor(contador_texto) > floor(_contador_anterior)) {
-            if (_letra_revelada == "." || _letra_revelada == "!" || _letra_revelada == "?") {
-                pausa_timer = 30;
-            }
-        }
-    }
-
-    var _texto_visivel = string_copy(frase, 1, contador_texto);
+    var _texto_visivel = string_copy(frase, 1, floor(contador_texto));
 
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);

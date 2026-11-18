@@ -54,7 +54,7 @@ if (caixadetexto) {
         _alvo_x = obj_turing.x;
         _alvo_y = obj_turing.y;
     }
-    else if (nome == "Mae" && instance_exists(obj_mae)) {
+    else if (nome == "Mãe" && instance_exists(obj_mae)) {
         _alvo_x = obj_mae.x;
         _alvo_y = obj_mae.y;
     }

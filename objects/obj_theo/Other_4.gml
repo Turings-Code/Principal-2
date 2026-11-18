@@ -16,3 +16,10 @@ if(room==rm_entradabletchley12){
 	image_blend = make_color_rgb(130, 150, 210);
 	image_xscale=7;
 		image_yscale=7;}
+		
+if(room==rm_bletchley1&&global.perseguicao){
+	x=1508;y=887;}
+	
+	if(room==rm_entradabletchley2&&global.perseguicao){
+		x=2286; y=506;}
+	
